@@ -3,7 +3,7 @@
   [nishi-orch.com](http://nishi-orch.com/)
 
 ## 使い方
-`gh-pages` ブランチが webサイトとして公開される。
+`main` ブランチがそのまま webサイトとして公開される。
 
 ## 備忘
 ドメイン `nishi-orch.com` は 29回HP係（広大25Vc 医・松本）が購入、管理している。（約750円/年）
