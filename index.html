@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="author" content="西日本医科学生オーケストラフェスティバル実行委員会">
+<meta name="description" content="西日本医科学生オーケストラフェスティバル、通称「西オケ」。第29回は2018年3月24日（土）広島開催。合宿は3/18-3/23 愛媛にて。">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="apple-touch-icon" size="192x192" href="src/apple-touch-icon.png">
+<link rel="canonical" href="https://nishi-orche.com/">
+<link rel="icon" href="src/favicon.ico">
+<link rel="stylesheet" href="src/normalize.css">
+<link rel="stylesheet" href="src/style.css">
+<link rel="stylesheet" href="src/flexslider.css">
+<link rel="stylesheet" href="src/lightbox.css">
+<title>第29回西オケ（西日本医科学生オーケストラフェスティバル）</title>
+<!--
+===================================================
+
+ Nishi-Orche Official Website
+   https://nishi-orche.com/
+
+===================================================
+-->
+
+<div class="first">
+ <div class="flexslider">
+  <ul class="slides">
+   <li style="background-image:url(img/sample_index1.jpg)">
+   <li style="background-image:url(img/sample_index2.jpg)">
+   <li style="background-image:url(img/sample_index3.jpg)">
+   <li style="background-image:url(img/sample_index4.jpg)">
+  </ul>
+ </div>
+</div>
+<header id="header"><!-- script.js で記述 --></header>
+
+
+
+<main>
+<section>
+
+<article>
+<h2>演奏会のご案内</h2>
+</article>
+
+<article class="concert" id="concert">
+<a data-lightbox="flyer" href="img/noimage.png"></a>
+<div>
+日時：2018年3月24日（土）
+場所：広島 上野学園ホール （<a href="http://www.rcchall.jp/hall/access/">周辺地図</a>）
+曲目：ラフマニノフ／交響曲第2番ホ短調　ほか
+
+
+指揮：中田延亮
+
+全席自由　500円（小学生以下無料）
+
+<a href="contact_form.html">≫ チケット予約（準備中）</a>
+</div>
+
+</article>
+</section>
+</main>
+
+
+
+<div id="tools"><!-- script.js で記述 --></div>
+<footer id="footer"><!-- script.js で記述 --></footer>
+<script src="src/script.js"></script>
+<script src="src/jquery-3.1.0.min.js"></script>
+<script src="src/flexslider.js"></script>
+<script src="src/lightbox.js"></script>
+<script>
+$(function(){
+
+$("[data-lightbox]").each(function(){
+ var h = this.href;
+ $(this).attr("style", "background-image:url('" + h + "')");
+});
+
+});
+</script>

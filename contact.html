@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="author" content="西日本医科学生オーケストラフェスティバル実行委員会">
+<meta name="description" content="お問い合わせはこちらから">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="apple-touch-icon" size="192x192" href="src/apple-touch-icon.png">
+<link rel="icon" href="src/favicon.ico">
+<link rel="stylesheet" href="src/normalize.css">
+<link rel="stylesheet" href="src/style.css">
+<link rel="stylesheet" href="src/blazy.css">
+<title>お問い合わせ | 第29回西オケ</title>
+
+<div class="first photo b-lazy" data-src="img/sample_hall.jpg">
+ <div class="headline">
+  <h1>お問い合わせ</h1>
+  <p>主要連絡先と実行委員の紹介</p>
+ </div>
+</div>
+<header id="header"><!-- script.js で記述 --></header>
+
+
+
+<main>
+<section>
+
+<article>
+<h2 id="address">連絡先</h2>
+（準備中）
+
+<!--
+<h2 id="faq">よくあるご質問</h2>
+（準備中）
+<dl>
+<dt>Q.
+<dd>A.
+<dt>Q.
+<dd>A.
+</dl>
+-->
+
+<h2 id="staff">実行委員</h2>
+<style>
+table.staff {
+ width: 100%;
+ white-space: normal;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 95%;
+}
+table.staff th,
+table.staff td {
+ padding: .5em;
+}
+table.staff td {
+ border-bottom: 1px dotted #ccc;
+}
+table.staff tr:nth-of-type(2n) {
+}
+table.staff th {
+ font-weight: inherit;
+}
+table.staff ul {
+ list-style-type: none;
+ margin: 0; padding: 0;
+}
+@media screen and (max-width: 580px){
+ table.staff,
+ table.staff tbody,
+ table.staff tr,
+ table.staff td {
+  display: block;
+ }
+ table.staff td:nth-child(1),
+ table.staff td:nth-child(2) {
+  display: inline-block;
+ }
+ table.staff th {
+  display: none;
+ }
+ table.staff tr {
+  margin-top: 2em;
+ }
+ table.staff td {
+  border: none;
+  padding: 0;
+ }
+ table.staff td:first-child {
+  padding-right: 1em;
+ }
+ table.staff li {
+  display: inline-block;
+ }
+ table.staff li:not(:first-child):before{
+  content: '・';
+ }
+}
+</style>
+<script>
+function g(s){
+ var m = 'nishiorche29' + s + '@gmail.com';
+ document.write('<a href="mailto:' + m + '">' + m + '</a>');
+}
+</script>
+<table class="staff">
+<tr><th>役職<th>名前<th>連絡先
+<tr><td>実行委員長<td>松島彩子<td><script>g('jiccho')</script>
+<tr><td>副実行委員長<td>上田智也<td>
+<tr><td>渉外<td>上田智也<td><script>g('shogai')</script>
+<tr><td>会計<td><ul><li>森田智子<li>大内徳子</ul><td><script>g('kaikei')</script>
+<tr><td>合宿所<td><ul><li>藤井泰斗<li>奥崎体</ul><td><script>g('gasshukujo')</script>
+<tr><td>ホール<td>山口瑞生<td><script>g('hall')</script>
+<tr><td>レセプション・打ち上げ<td>山田息吹<td><script>g('reception')</script>
+<tr><td>CD・DVD<td>遠藤正也<td><script>g('video')</script>
+<tr><td>楽譜<td>頼近恭典<td>
+<tr><td>譜面台<td>久保田千貴<td><script>g('fumendai')</script>
+<tr><td>HP<td>松本洋一郎<td><script>g('web')</script>
+<tr><td>エントリー<td>松本洋一郎<td><script>g('entry')</script>
+<tr><td>デザイン<td>青山雄一郎<td>
+<tr><td>パンフレット・チケット<td>井上和子<td><script>g('ticket')</script>
+<tr><td>広報<td><ul><li>佐藤真由<li>平岡敬一</ul><td><script>g('kouhou')</script>
+<tr><td>後援<td><ul><li>佐藤真由<li>平岡敬一</ul><td><script>g('kouen')</script>
+<tr><td>前当日<td><ul><li>金井陽奈<li>山口栞</ul><td>
+<tr><td>運搬・特殊楽器<td>渡辺詩織<td><script>g('unpan')</script>
+<tr><td>指揮者<td><ul><li>岩本奈々<li>古賀愛華</ul><td>
+<tr><td>スタッフ<td>泉亮介<td>
+</table>
+</article>
+</section>
+</main>
+
+
+
+<div id="tools"><!-- script.js で記述 --></div>
+<footer id="footer"><!-- script.js で記述 --></footer>
+<script src="src/script.js"></script>
+<script src="src/blazy.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement":
+  [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item":
+      {
+        "@id": "contact.html",
+        "name": "お問い合わせ"
+      }
+    }
+  ]
+}
+</script>
