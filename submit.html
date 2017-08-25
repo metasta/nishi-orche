@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta http-equiv="Refresh" content="9;URL=https://nishi-orche.com">
+<title>お問い合わせを送信しました</title>
+<style>
+html, body, main {
+ height: 100%;
+ font: 200 12pt sans-serif;
+ color: #444;
+}
+main {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+figure {
+ margin: 0 auto;
+ width: 128px;
+ height: 128px;
+ background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:256px;height:256px"><path d="M309.348 131.066H17.222C7.711 131.066 0 138.782 0 148.293v215.418c0 9.511 7.711 17.222 17.222 17.222h292.126c9.515 0 17.23-7.711 17.23-17.222V148.293c0-9.511-7.715-17.227-17.23-17.227zM29.691 351.246v-7.61c30.114-24.153 60.219-48.309 90.325-72.477l31.496 25.137a17.228 17.228 0 0 0 21.527-.027l33.519-26.89a252151.96 252151.96 0 0 1 90.328 72.035v9.832H29.691zm267.195-182.918c-41.293 33.137-82.59 66.278-123.89 99.406a17.227 17.227 0 0 1-21.519.031c-40.598-32.367-81.195-64.726-121.786-97.102v-9.906h267.195v7.571zm-194.765 88.656c-14.87 11.938-29.75 23.871-44.621 35.805l-17.094 13.664-10.715 8.442V199.129c19.809 15.813 39.622 31.618 59.442 47.418l10.711 8.57 2.277 1.867zm194.605 55.798c-19.859-15.844-39.726-31.68-59.594-47.516l-10.57-8.453-2.145-1.758c24.149-19.402 48.309-38.801 72.469-58.191v71.516l-.038 27.469-.122 16.933zM511.95 155.539l.05-.156H361.754v31.679h140.215l7.687-24.277 2.344-7.246zm-150.196 55.442v31.679h122.605l7.707-24.336 2.328-7.183h-.05l.05-.16zm0 55.597v31.68h105l7.692-24.281 2.339-7.239h-.047l.051-.16z" fill="#3aabd2"/></svg>') center center / cover no-repeat;
+}
+div {
+ text-align: center;
+}
+a[href] {
+ text-decoration: none;
+ color: #3498db;
+}
+small {
+ display: block;
+ margin-top: 4em;
+ color: #999;
+}
+</style>
+<main>
+ <div>
+  <figure></figure>
+  <p>お問い合わせを送信しました</p>
+  <p><span id="sec">9</span> 秒後に<a href="https://nishi-orche.com">トップページ</a>へ移動します</p>
+  <small>&copy; 西オケ実行委員会</small>
+ </div>
+</main>
+<script>
+var sec = document.getElementById('sec');
+var t = 9;
+var countdown = function(){
+ if (t > 0) { sec.innerHTML = --t;}
+};
+setInterval(countdown, 1000);
+</script>
