@@ -78,17 +78,26 @@ button:hover {
 }
 
 </style>
+<script>
+var form = document.getElementById('contact-form');
+var m = 'metas' + 'ta@gma' + 'il.c' + 'om';
+form.setAttribute('action', 'https://formspree.io/' + m);
+</script>
 <article>
 <h2 id="mail-form">メールフォーム</h2>
 西日本医科学生オーケストラ・フェスティバルについて、以下のメールフォームよりお問い合わせを承ります。
 
-<form action="https://www.elformo.com/forms/a05593b0-0a28-4b0b-a15c-e3e0e57aa64e" method="post" accept-charset="UTF-8">
+<form id="contact-form" method="post" accept-charset="UTF-8">
  <label for="name">お名前</label>
  <input type="text" id="name" name="name" required/>
  <label for="mail">メールアドレス</label>
  <input type="email" id="mail" name="mail" required/>
  <label for="message">お問い合わせ内容</label>
  <textarea id="message" name="message" required></textarea>
+
+ <input type="hidden" name="_next" value="https://nishi-orche.com/submit.html" />
+ <input type="hidden" name="_subject" value="お問い合わせを受信しました" />
+ <input type="hidden" name="_format" value="plain" />
 
  <button type="submit">送信</button>
 </form>
