@@ -35,7 +35,7 @@ form {
 }
 label {
  display: block;
- margin: 0;
+ margin: 14px 0 0 0;
  height: 22px;
 }
 input, textarea, button {
@@ -46,7 +46,7 @@ input, textarea, button {
  -webkit-appearance: none;
 }
 input, textarea {
- margin: 0 0 10px 0;
+ margin: 0;
  border: 1px solid #bbb;
  padding: 0 .5em;
  outline: 0;
@@ -80,11 +80,15 @@ button:hover {
 </style>
 <article>
 <h2 id="mail-form">メールフォーム</h2>
-<form action="" method="post">
+西日本医科学生オーケストラ・フェスティバルについて、以下のメールフォームよりお問い合わせを承ります。
+
+<form action="https://www.elformo.com/forms/a05593b0-0a28-4b0b-a15c-e3e0e57aa64e" method="post" accept-charset="UTF-8">
+ <label for="name">お名前</label>
+ <input type="text" id="name" name="name" required/>
  <label for="mail">メールアドレス</label>
- <input type="mail" id="email" name="mail" />
+ <input type="email" id="mail" name="mail" required/>
  <label for="message">お問い合わせ内容</label>
- <textarea id="message" name="message"></textarea>
+ <textarea id="message" name="message" required></textarea>
 
  <button type="submit">送信</button>
 </form>
