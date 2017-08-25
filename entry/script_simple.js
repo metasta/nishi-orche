@@ -13,7 +13,7 @@ function navItem(url, text){
 }
 var header = document.createElement('header');
 header.innerHTML = ''
- + '<a href="../"><p>第29回西オケ</p><p>エントリー受付</p></a>'
+ + '<a href="."><p>第29回西オケ</p><p>エントリー受付</p></a>'
  + '<ul>'
  + '<li>' + navItem('.', 'エントリー')
  + '<li>' + navItem('fee.html',   '参加費のご案内')
