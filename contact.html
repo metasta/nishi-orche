@@ -96,11 +96,6 @@ button:hover {
 
  <button type="submit">送信</button>
 </form>
-<script>
-var form = document.getElementById('contactform');
-var m = 'metas' + 'ta@gma' + 'il.c' + 'om';
-form.setAttribute('action', 'https://formspree.io/' + m);
-</script>
 <!--
 <h2 id="faq">よくあるご質問</h2>
 （準備中）
@@ -205,6 +200,11 @@ function g(s){
 
 <div id="tools"><!-- script.js で記述 --></div>
 <footer id="footer"><!-- script.js で記述 --></footer>
+<script>
+var form = document.getElementById('contactform');
+var m = 'metas' + 'ta@gma' + 'il.c' + 'om';
+form.setAttribute('action', 'https://formspree.io/' + m);
+</script>
 <script src="src/script.js"></script>
 <script src="src/blazy.js"></script>
 <script type="application/ld+json">
