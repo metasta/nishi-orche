@@ -29,7 +29,7 @@
  position: absolute;
  bottom: 0;
  text-align: center;
- z-index: 99999;
+ z-index: 999;
  margin: 0;
  padding: 17px 0;
 }
