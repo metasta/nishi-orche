@@ -42,7 +42,7 @@ u {
 
 
 .first {
- width:100%;
+ width: auto;
  height:65%;
  position:relative;
  background: #444;
@@ -89,8 +89,9 @@ u {
  top:0;
  z-index:99;
  width: 100%;
- background: #FFF;
- opacity: 0.75;
+ overflow: hidden;
+ background: #fff;
+ opacity: .75;
  box-shadow: 0 0 10px rgba(0,0,0,1);
 }
 #header .container {
@@ -107,36 +108,42 @@ u {
 
 #header .nav {
  display: flex;
+ flex-flow: row wrap;
  list-style: none;
  margin: 0;
  padding: 0;
 }
-#header .nav>li {
- flex: none;
- margin: 0
+#header .nav > li {
+ margin: 0;
 }
-#header .nav>li>a {
+#header .nav > li > a {
  border-bottom: 3px double rgba(120,0,0,0);
- color: #000000;
+ color: #000;
  display: block;
  padding: 5px;
  line-height: 20px;
  text-decoration: none;
  transition: border-color .2s;
 }
-#header .nav>li>a:hover {
+#header .nav > li > a:hover {
  border-bottom-color: rgba(120,0,0,.4);
 }
-#header .nav>li>a.active {
+#header .nav > li > a.active {
  border-bottom-color: rgba(120,0,0,1);
 }
+/* 小さな端末で nav を 320px 幅に収めるため余白を減らす */
+@media screen and (max-width: 340px){
+ #header .nav > li > a {
+  padding: 5px 2px;
+ }
+}
 /* screen width < 760px */
-#header   { height: 120px }
+#header   { height: auto; padding-bottom: 9px; }
 #header .nav      { justify-content: center }
-#header .brand    { margin: 16px auto 8px auto}
+#header .brand    { margin: 16px auto 8px}
 
 @media screen and (min-width:760px){
- #header   { height: 90px }
+ #header   { height: 90px; padding: 0; }
  #header .container{ height: 100% }
  #header .nav      { position:absolute;right:0;top:0;bottom:0;margin:auto }
  #header .nav>li   { margin: 0 5px }
@@ -156,11 +163,11 @@ u {
 
 main {
  background: #fff;
- width: 100%;
+ width: auto;
 }
 main a[href] {
  font-weight: 300;
- color: #3498DB;
+ color: #3498db;
 }
 main>section {
  box-sizing: border-box;
@@ -181,12 +188,12 @@ a.see_detail[href] {
  border: 1px solid #666;
  border-radius: 3px;
  color: #666;
- transition: 0.3s;
+ transition: .3s;
 }
 a.see_detail[href]:hover {
  text-decoration: none;
- border-color: #3498DB;
- color: #3498DB;
+ border-color: #3498db;
+ color: #3498db;
 }
 @media screen and (min-width: 480px){
  a.see_detail[href] {
@@ -237,23 +244,23 @@ article a[href="contact_form.html"] {
  display: inline-block;
  font-weight: inherit;
  text-align: center;
- border: 1px solid #3498DB;
+ border: 1px solid #3498db;
  border-radius: 2px;
  transition: .3s;
  width: 14em;
 }
 article a[href="contact_form.html"]:hover {
  text-decoration: none;
- background: #3498DB;
+ background: #3498db;
  color: #fff;
 }
 
 
 
 #tools {
- background: #fff;
- width:100%;
+ width: auto;
  padding: 50px 0;
+ background: #fff;
 }
 #tools .margin {
  margin: 0 auto;
