@@ -128,6 +128,9 @@ u {
 #header .nav > li > a:hover {
  border-bottom-color: rgba(120,0,0,.4);
 }
+#header .nav > li > a:active {
+ border-bottom-color: rgba(120,0,0,1);
+}
 #header .nav > li > a.active {
  border-bottom-color: rgba(120,0,0,1);
 }
@@ -146,8 +149,8 @@ u {
  #header   { height: 90px; padding: 0; }
  #header .container{ height: 100% }
  #header .nav      { position:absolute;right:0;top:0;bottom:0;margin:auto }
- #header .nav>li   { margin: 0 5px }
- #header .nav>li>a { margin-top: 30px }
+ #header .nav > li   { margin: 0 5px }
+ #header .nav > li > a { margin-top: 30px }
  #header .brand    { margin: 0 0 0 10px; width: 360px; height: 100%;}
 }
 @media screen and (min-width:880px){

@@ -48,6 +48,9 @@
 #simple header li > a:hover {
  border-bottom: 3px double rgba(120,0,0,.4);
 }
+#simple header li > a:active {
+ border-bottom: 3px double rgba(120,0,0,1);
+}
 #simple header li > a.active {
  border-bottom: 3px double rgba(120,0,0,1);
 }
