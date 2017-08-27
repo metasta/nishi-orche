@@ -59,7 +59,7 @@ if (footer) {
  + '<li><a href="contact.html">お問い合わせ</a>'
  +  '<ul>'
  +   '<li><a href="contact.html#address">連絡先</a>'
- +   '<li><a href="contact.html#staff">実行委員</a>'
+ +   '<li><a href="contact.html#staff">第29回実行委員</a>'
  +  '</ul>'
  + '</ul>'
  + '<small class="copyright">&copy; 2017 <u>西日本医科学生</u><u>オーケストラ・フェスティバル</u><u>実行委員会</u></small>';
