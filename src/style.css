@@ -30,6 +30,9 @@ a[href] {
 a:hover {
  text-decoration: underline;
 }
+a[href=""] {
+ text-decoration: line-through;
+}
 i, cite, em, var, address, dfn {
  font-style: normal;
 }
@@ -44,6 +47,7 @@ u {
 .first {
  width: auto;
  height:65%;
+ min-height: 300px;
  position:relative;
  background: #444;
 }
