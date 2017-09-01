@@ -33,6 +33,9 @@ a:hover {
 a[href=""] {
  text-decoration: line-through;
 }
+strong, b {
+ font-weight: 600;
+}
 i, cite, em, var, address, dfn {
  font-style: normal;
 }

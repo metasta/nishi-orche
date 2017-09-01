@@ -68,6 +68,26 @@
  }
 }
 
+ul.explain {
+ white-space: normal;
+ list-style-type: none;
+ margin: 0 0 0 1em;
+ padding: 0;
+}
+ul.explain > li {
+ margin-bottom:1em;
+}
+ul.explain > li:before {
+ content: '●';
+ margin-left: -1em;
+}
+ul.explain > li.notice:before {
+ content: '※';
+}
+ul.explain > li > ul {
+ padding-left: 1em;
+}
+
 ul.backlink {
  box-sizing: border-box;
  margin: 0 auto;
