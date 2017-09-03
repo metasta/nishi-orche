@@ -71,44 +71,14 @@ button {
  padding: 3px 20px;
  color: #fff;
  background-color: #3498db;
- transition: background-color .2s
+ transition: background-color .2s;
 }
 button:focus,
-button:hover {
+button:hover,
+button:active {
  background-color: #56bafe;
 }
 
-</style>
-<article>
-<h2 id="mail-form">メールフォーム</h2>
-以下のフォームよりお問い合わせを承っております。
-
-<form id="contactform" method="post" accept-charset="UTF-8">
- <label for="name">お名前</label>
- <input type="text" id="name" name="name" required/>
- <label for="mail">メールアドレス</label>
- <input type="email" id="mail" name="mail" required/>
- <label for="message">お問い合わせ内容</label>
- <textarea id="message" name="message" required></textarea>
-
- <input type="hidden" name="_next" value="https://nishi-orche.com/submit.html" />
- <input type="hidden" name="_language" value="ja" />
- <input type="hidden" name="_subject" value="お問い合わせが届きました" />
-
- <button type="submit">送信</button>
-</form>
-<!--
-<h2 id="faq">よくあるご質問</h2>
-（準備中）
-<dl>
-<dt>Q.
-<dd>A.
-<dt>Q.
-<dd>A.
-</dl>
--->
-<h2 id="staff">第29回実行委員</h2>
-<style>
 table.staff {
  width: 100%;
  white-space: normal;
@@ -170,6 +140,35 @@ function g(s){
  document.write('<a href="mailto:' + m + '">' + m + '</a>');
 }
 </script>
+<article>
+<h2 id="mail-form">メールフォーム</h2>
+以下のフォームよりお問い合わせを承っております。
+
+<form id="contactform" method="post" accept-charset="UTF-8">
+ <label for="name">お名前</label>
+ <input type="text" id="name" name="name" required/>
+ <label for="mail">メールアドレス</label>
+ <input type="email" id="mail" name="mail" required/>
+ <label for="message">お問い合わせ内容</label>
+ <textarea id="message" name="message" required></textarea>
+
+ <input type="hidden" name="_next" value="https://nishi-orche.com/submit.html" />
+ <input type="hidden" name="_language" value="ja" />
+ <input type="hidden" name="_subject" value="お問い合わせが届きました" />
+
+ <button type="submit">送信</button>
+</form>
+<!--
+<h2 id="faq">よくあるご質問</h2>
+（準備中）
+<dl>
+<dt>Q.
+<dd>A.
+<dt>Q.
+<dd>A.
+</dl>
+-->
+<h2 id="staff">第29回実行委員</h2>
 <table class="staff">
 <tr><th>役職<th>名前<th>連絡先
 <tr><td>実行委員長<td>松島彩子<td><script>g('jiccho')</script>

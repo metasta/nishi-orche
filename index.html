@@ -40,27 +40,101 @@
 
 
 <main>
-<section>
+<style>
+a[href].entry-site {
+ display: block;
+ background: #222;
+ padding: 16px;
+ border-bottom: 1px solid #111;
+ color: #fff;
+ font-size: 12pt;
+ text-align: center;
+ transition: .3s;
+}
+a[href].entry-site:focus,
+a[href].entry-site:hover,
+a[href].entry-site:active {
+ color: #111;
+ background: #fff;
+ text-decoration: none;
+}
+a[href].entry-site.disabled {
+ display: none;
+}
 
+</style>
+
+<a class="entry-site disabled" href="entry/">エントリー受付へ</a>
+
+<section>
+<article>
+現在、前曲・中曲を選曲中です。
+
+エントリー受付開始は11月を予定しております。しばらくお待ちください。
+</article>
 <article>
 <h2>演奏会のご案内</h2>
 </article>
-
-<article class="concert" id="concert">
-<!-- a data-lightbox="flyer" href="img/noimage.png"></a -->
-<div>
-日時：2018年3月24日（土）
-場所：広島 上野学園ホール （<a href="http://www.rcchall.jp/hall/access/">周辺地図</a>）
-曲目：ラフマニノフ／交響曲第2番ホ短調　ほか
-
-
-指揮：中田延亮
-
-全席自由　500円（小学生以下無料）
-
-<!-- a href="">≫ チケット予約（準備中）</a -->
-</div>
-
+<style>
+table.dl {
+ border-collapse: collapse;
+ border: none;
+}
+table.dl td:first-child {
+ width: 2.5em;
+ vertical-align: top;
+}
+.con {
+ white-space: normal;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+}
+.con > a[data-lightbox] {
+ flex: none;
+ display: block;
+ box-sizing: border-box;
+ margin: 0 1.5em 1.5em;
+ width: 270px;
+ height: 382px;
+ border: 1px solid #ddd;
+ background: #ddd center center / cover no-repeat;
+}
+.con > div {
+ display: block;
+ vertical-align: top;
+ text-align: left;
+ max-width: 440px;
+}
+@media screen and (min-width: 640px){
+ .con { justify-content: flex-start; }
+}
+.con.noimage {
+ justify-content: flex-start;
+}
+.con.noimage > a[data-lightbox] {
+ display: none;
+}
+</style>
+<article id="concert" class="con noimage">
+ <a data-lightbox="flyer" href="img/noimage.png"></a>
+ <div>
+  <table class="dl">
+   <tr><td>日時<td>2018年3月24日（土）
+   <tr><td>会場<td>広島 上野学園ホール <u>（<a target="_blank" href="http://www.rcchall.jp/hall/access/">地図</a>）</u>
+   <tr><td>曲目<td>ラフマニノフ／交響曲第2番ホ短調
+   <tr><td>
+   <tr><td>指揮<td>中田延亮
+  </table>
+  <p>全席自由　500円（小学生以下無料）</p>
+ </div>
+</article>
+<article>
+<h2>合宿日程</h2>
+<table class="dl">
+<tr><td>日時<td><u>2018年3月18日（日）〜 </u><u>2018年3月23日（金）</u>
+<tr><td>会場<td>愛媛 ホテルアジュール汐の丸<u>（<a target="_blank" href="http://www.hotel-ajour.jp/access/">地図</a>）</u>
+</table>
 </article>
 </section>
 </main>
