@@ -43,7 +43,7 @@ if (footer) {
  +  '</ul>'
  + '<li><a href="about.html">西オケとは</a>'
  +  '<ul>'
- +   '<li><a href="about.html#message">実行委員長より</a>'
+ +   '<li><a href="about.html#message">実行委員長挨拶</a>'
  +   '<li><a href="about.html#past">過去の公演</a>'
  +  '</ul>'
  + '<li><a href="maestros.html">先生紹介</a>'
