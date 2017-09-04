@@ -21,6 +21,14 @@
  background-position: center center;
  background-repeat: no-repeat;
 }
+.flexslider > .slides > li > a {
+ position: absolute;
+ right: 2em;
+ bottom: 1.5em;
+ font-size: 9pt;
+ font-weight: 300;
+ color: rgba(255,255,255,.75);
+}
 
 
 
@@ -32,6 +40,7 @@
  z-index: 999;
  margin: 0;
  padding: 17px 0;
+ pointer-events: none;
 }
 .flex-control-nav ul {
  position: relative;
@@ -54,6 +63,7 @@
  width: 14px;
  height: 14px;
  cursor: pointer;
+ pointer-events: auto;
 }
 .flex-control-nav li a {
  position: absolute;
