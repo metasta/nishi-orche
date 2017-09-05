@@ -25,18 +25,32 @@
 ===================================================
 -->
 <style>
+.flexslider > .slides > li > .copyright {
+ display: block;
+ box-sizing: border-box;
+ width: 45%; /* fallback */
+ width: calc(50% - 70px);
+ position: absolute;
+ right: 0; bottom: 0;
+ margin: 0 15px 23px 0;
+ padding: 0;
+ font-size: 7pt;
+ font-weight: 300;
+ color: rgba(255,255,255,.75);
+ text-align: right;
+}
 </style>
 <div class="first">
  <div class="flexslider">
   <ul class="slides">
    <li style="background-image:url(img/free_hiroshima_miyajima1.jpg)">
-    <a href="https://commons.wikimedia.org/wiki/File:Itsukushima_shrine_01.jpg">Butch, CC BY-SA 4.0</a>
+    <p class="copyright"><a href="https://commons.wikimedia.org/wiki/File:Itsukushima_shrine_01.jpg"><u>Butch</u> <u>CC BY-SA 4.0</u></a></p>
    <li style="background-image:url(img/free_hiroshima_night_city.jpg)">
-    <a href="https://commons.wikimedia.org/wiki/File:HiroshimaNight.jpg">Charles Voogd, CC BY-SA 3.0</a>
+    <p class="copyright"><a href="https://commons.wikimedia.org/wiki/File:HiroshimaNight.jpg"><u>Charles Voogd</u> <u>CC BY-SA 3.0</u></a></p>
    <li style="background-image:url(img/free_hiroshima_stadium.jpg)">
-    <a href="https://commons.wikimedia.org/wiki/File:MAZDA_Zoom-Zoom_Stadium_Hiroshima(March_21,_2016).JPG">HKT3012, CC BY-SA 4.0</a>
+    <p class="copyright"><a href="https://commons.wikimedia.org/wiki/File:MAZDA_Zoom-Zoom_Stadium_Hiroshima(March_21,_2016).JPG"><u>HKT3012</u> <u>CC BY-SA 4.0</u></a></p>
    <li style="background-image:url(img/free_hiroshima_okonomi.jpg)">
-    <a href="https://www.flickr.com/photos/norio-nakayama/8591551998">Norio NAKAYAMA, CC BY-SA 2.0</a>
+    <p class="copyright"><a href="https://www.flickr.com/photos/norio-nakayama/8591551998"><u>Norio NAKAYAMA</u> <u>CC BY-SA 2.0</u></a></p>
   </ul>
  </div>
 </div>

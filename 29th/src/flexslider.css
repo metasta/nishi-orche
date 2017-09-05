@@ -21,14 +21,6 @@
  background-position: center center;
  background-repeat: no-repeat;
 }
-.flexslider > .slides > li > a {
- position: absolute;
- right: 2em;
- bottom: 1.5em;
- font-size: 9pt;
- font-weight: 300;
- color: rgba(255,255,255,.75);
-}
 
 
 
