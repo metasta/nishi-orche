@@ -151,11 +151,6 @@ function g(s){
  <input type="email" id="mail" name="mail" required/>
  <label for="message">お問い合わせ内容</label>
  <textarea id="message" name="message" required></textarea>
-
- <input type="hidden" name="_next" value="https://nishi-orche.com/submit.html" />
- <input type="hidden" name="_language" value="ja" />
- <input type="hidden" name="_subject" value="お問い合わせが届きました" />
-
  <button type="submit">送信</button>
 </form>
 <!--
@@ -172,8 +167,7 @@ function g(s){
 <table class="staff">
 <tr><th>役職<th>名前<th>連絡先
 <tr><td>実行委員長<td>松島彩子<td><script>g('jiccho')</script>
-<tr><td>副実行委員長<td>上田智也<td>
-<tr><td>渉外<td>上田智也<td><script>g('shogai')</script>
+<tr><td>副実行委員長・渉外<td>上田智也<td><script>g('shogai')</script>
 <tr><td>会計<td><ul><li>森田智子<li>大内徳子</ul><td><script>g('kaikei')</script>
 <tr><td>合宿所<td><ul><li>藤井泰斗<li>奥崎体</ul><td><script>g('gasshukujo')</script>
 <tr><td>ホール<td>山口瑞生<td><script>g('hall')</script>
@@ -202,8 +196,8 @@ function g(s){
 <footer id="footer"><!-- script.js で記述 --></footer>
 <script>
 var form = document.getElementById('contactform');
-var m = 'metas' + 'ta@gma' + 'il.c' + 'om';
-form.setAttribute('action', 'https://formspree.io/' + m);
+var m = 'nis' + 'hior' + 'che-mai' + 'lfo' + 'rm/';
+form.setAttribute('action', 'https://ss1.xrea.com/metasta.s602.xrea.com/' + m);
 </script>
 <script src="src/script.js"></script>
 <script src="src/blazy.js"></script>
