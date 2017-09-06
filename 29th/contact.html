@@ -78,6 +78,9 @@ button:hover,
 button:active {
  background-color: #56bafe;
 }
+input[type="hidden"]{
+ display: none;
+}
 
 table.staff {
  width: 100%;
@@ -146,11 +149,12 @@ function g(s){
 
 <form id="contactform" method="post" accept-charset="UTF-8">
  <label for="name">お名前</label>
- <input type="text" id="name" name="name" required/>
+ <input type="text" id="name" name="name" required />
  <label for="mail">メールアドレス</label>
- <input type="email" id="mail" name="mail" required/>
+ <input type="email" id="mail" name="mail" required />
  <label for="message">お問い合わせ内容</label>
  <textarea id="message" name="message" required></textarea>
+ <input type="hidden" id="_id" name="_id" />
  <button type="submit">送信</button>
 </form>
 <!--
@@ -196,8 +200,9 @@ function g(s){
 <footer id="footer"><!-- script.js で記述 --></footer>
 <script>
 var form = document.getElementById('contactform');
-var m = 'nis' + 'hior' + 'che-mai' + 'lfo' + 'rm/';
-form.setAttribute('action', 'https://ss1.xrea.com/metasta.s602.xrea.com/' + m);
+var m = 'htt' + 'ps://ss' + '1.xre' + 'a.c' + 'om/metas' + 'ta.s602.xr' + 'ea.c' + 'om/nis' + 'hiorch' + 'e29-mai' + 'lfo' + 'rm/';
+form.setAttribute('action', m);
+document.getElementById('_id').setAttribute('value','eeKbc3GeFpMJL2m2');
 </script>
 <script src="src/script.js"></script>
 <script src="src/blazy.js"></script>
