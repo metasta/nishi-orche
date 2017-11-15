@@ -22,10 +22,17 @@ header.innerHTML = ''
  + '</ul>';
 document.body.insertBefore(header, document.body.firstChild);
 
+function entry_top(){
+ if (window.location.pathname.split('/').pop() == ''){
+  return '';
+ }
+ else {return '<li><a href=".">エントリー受付　トップページへ戻る</a>';}
+}
+
 var ul = document.createElement('ul');
 ul.setAttribute('class','backlink');
 ul.innerHTML = ''
- + '<li><a href=".">エントリーページへ戻る</a>'
+ + entry_top()
  + '<li><a href="..">第29回西オケ トップページへ戻る</a>';
 document.getElementsByTagName('main')[0].appendChild(ul);
 

@@ -62,34 +62,43 @@
 <style>
 a[href].entry-site {
  display: block;
- background: #222;
+ box-sizing: border-box;
+ background: #500;
+ margin: 20px auto 0 auto;
+ max-width: 710px;
  padding: 16px;
- border-bottom: 1px solid #111;
+ border: 1px solid #500;
+ border-radius: 0;
  color: #fff;
  font-size: 12pt;
  text-align: center;
- transition: .3s;
+ transition: .2s;
 }
 a[href].entry-site:focus,
 a[href].entry-site:hover,
 a[href].entry-site:active {
- color: #111;
+ color: #500;
  background: #fff;
  text-decoration: none;
 }
 a[href].entry-site.disabled {
  display: none;
 }
+@media screen and (min-width: 710px){
+ a[href].entry-site {
+  border-radius: 5px;
+ }
+}
 
 </style>
 
-<a class="entry-site disabled" href="entry/">エントリー受付へ</a>
+<a class="entry-site" href="entry/">エントリー受付へ</a>
 
 <section>
 <article>
-現在、前曲・中曲を選曲中です。
+前曲・中曲決定間近です！
 
-エントリー受付開始は11月を予定しております。しばらくお待ちください。
+エントリーに関する情報をまとめた<a href="entry/">エントリー受付</a>ページを開設しました。12月1日・2日受付開始予定です。
 </article>
 <article>
 <h2>演奏会のご案内</h2>
