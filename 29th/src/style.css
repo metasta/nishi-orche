@@ -221,8 +221,8 @@ a[href].button:active {
 }
 a[href].button.disabled {
  pointer-events: none;
- background-color: #ccc;
- color: #eee;
+ background-color: #cdcdcd;
+ color: #fff;
 }
 
 
