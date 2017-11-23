@@ -26,6 +26,42 @@
 
 
 <main>
+
+<style>
+a[href].entry-site {
+ display: block;
+ box-sizing: border-box;
+ background: #500;
+ margin: 20px auto 0 auto;
+ max-width: 710px;
+ padding: 16px;
+ border: 1px solid #500;
+ border-radius: 0;
+ color: #fff;
+ font-size: 12pt;
+ text-align: center;
+ transition: .2s;
+}
+a[href].entry-site:focus,
+a[href].entry-site:hover,
+a[href].entry-site:active {
+ color: #500;
+ background: #fff;
+ text-decoration: none;
+}
+a[href].entry-site.disabled {
+ display: none;
+}
+@media screen and (min-width: 710px){
+ a[href].entry-site {
+  border-radius: 5px;
+ }
+}
+
+</style>
+
+<a class="entry-site" href="entry/">エントリー受付へ</a>
+
 <section>
 <article>
 <h2 id="entry">エントリーについて</h2>
