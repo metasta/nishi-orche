@@ -23,79 +23,104 @@ a[href].button {
  margin: 0 auto;
  max-width: 480px;
 }
+p.indent {
+ display: inline-block;
+ padding: 0;
+ margin: 0;
+}
+p.indent > * {
+ text-indent: 0;
+}
+ul {
+ white-space: normal;
+ margin: 0;
+}
+table, tr, td {
+ box-sizing: border-box;
+ border-collapse: collapse;
+}
+.accounting {
+ margin: 0 auto;
+}
+.accounting td:first-child {
+ padding-right: 1em;
+}
+.accounting td:last-child {
+ text-align: right;
+}
+.deadline td {
+ padding-right: 1em;
+ vertical-align: top;
+
+}
+.deadline td:last-child {
+ padding:0;
+}
+tr.u td {
+ border-bottom: 1px solid #877;
+}
 </style>
+<script>
+ function g(i){
+  var m = 'nis' + 'hiorc' + 'he29' + i + '@gm' + 'ail.c' + 'om';
+  document.write('<a href="mailto:' + m + '">' + m + '</a>' );
+ }
+</script>
 <article>
-<h2>エントリーフォーム</h2>
-<a href="wind_and_percussions.html" class="button">管打楽器 エントリー受付</a>
-<a href="strings.html" class="button">弦楽器　エントリー受付</a>
-<h2>追加募集について</h2>
-2018.1.5 23:00より、クラリネット・ファゴット・チェロの追加募集を開始しました。
+<h2 id="form">エントリーフォーム</h2>
+<a href="wind_and_percussions.html" class="button">管打楽器 エントリー</a>
+<a href="strings.html" class="button">弦楽器　エントリー</a>
+<h2 id="news">募集情報</h2>
+<a href="latest_entry_table.html">現在の参加状況</a>（大学・パート別集計）
 
-<span style="color: #bbb"><strong>クラリネット</strong></span>　<strong>募集終了</strong><span style="color: #bbb">
-人数 1名（アシスタントとして）
-日時 2018.1.5 23:00-
-方法 エントリーフォームよりエントリー
-　　 先着順、定員に達し次第締切</span>
+<p class="indent"><strong><u>急募</u></strong>：<strong><u>テューバ</u></strong>・<strong><u>ヴィオラ</u></strong>・<strong><u>コントラバス</u></strong></p>
+<p class="indent">募集中：フルート・ファゴット・トランペット・パーカッション・ヴァイオリン</p>
+<p class="indent">募集終了：オーボエ・クラリネット・ホルン・トロンボーン・チェロ</p>
+<p class="indent">追加募集予定：テナーサックス <small><u>※詳細未定</u></small></p>
+<h2>目次</h2>
+<a href="#steps">エントリーの流れ</a>
+　<a href="#steps1">1. エントリー申込</a>
+　<a href="#steps2">2. メーリングリストへの参加</a>
+　<a href="#steps3">3. 参加費の振込</a>
 
-<strong>ファゴット</strong>
-人数 1名
-日時 2018.1.5 23:00-
-方法 <a href="wind_and_percussions.html">エントリーフォーム</a>よりエントリー
-　　 先着順、定員に達し次第締切
+<a href="#deadline">変更等申請締切</a>
 
-<span style="color: #bbb"><strong>チェロ</strong></span>　<strong>募集終了</strong><span style="color: #bbb">
-人数 3名
-日時 2018.1.5 23:00 - 翌 0:00（1時間）
-方法 エントリーフォームよりエントリー
-　　 パートリーダーによる選考</span>
+<a href="#inquiry">お問い合わせ</a>
+<h2 id="steps">エントリーの流れ</h2>
+<h3 id="step1">1. エントリー申込</h3>
+<a href="fee.html">参加費のご案内</a>と<a href="parts.html">パート紹介</a>を必ずご確認のうえ、上記フォームよりエントリーしてください。
+<!-- a href="https://goo.gl/forms/quv3J103t1YwX9tG2">テストフォーム</a>を開設しております。項目は実際のエントリーフォームと同じです。事前の動作確認にご利用ください。-->エントリーフォームの最後、送信ボタンの前に「私はロボットではありません」という確認項目があります。<u>✓を</u>入れ認証が完了してから送信してください。
+送信後、エントリー内容のコピーをメールで自動送付します。
 
-現在クラリネット、チェロはすでに募集を終了しております。
-また、日時・方法は未定ですが以下の追加募集を予定しております。
-
-<strong>テナーサックス</strong>
-人数 1名
-日時 未定
-方法 未定
-
-なお、フルート、トランペット、テューバ、パーカッション、ヴァイオリン、ヴィオラ、コントラバスについては引き続き募集を継続しております。ぜひ奮ってご参加ください。
-
-<h2>エントリー情報</h2>
-<a href="latest_entry_table.html">現在の参加状況</a>を随時更新中です。
-
-【募集中】
-　フルート
-　ファゴット
-　トランペット
-　テューバ
-　パーカッション
-　ヴァイオリン
-　ヴィオラ
-　コントラバス
-
-【追加募集予定】
-　テナーサックス
-
-【募集終了】
-　オーボエ
-　クラリネット
-　ホルン
-　トロンボーン
-　チェロ
-
-特に<strong>ヴィオラ</strong>と<strong>コントラバス</strong>の人数が不足しています。皆様のエントリーをお待ちしております。
-<h2>エントリーについて</h2>
-<ul class="explain">
-<li>西オケへの参加を希望される方は、上記フォームよりエントリーしてください。
-<li><a href="fee.html">参加費のご案内</a>と<a href="parts.html">パート紹介</a>を必ずお読みください。
-<li>エントリーは<strong>先着順</strong>です。各パート募集枠の定員に達した時点で締切とします。
-<li><a href="https://goo.gl/forms/quv3J103t1YwX9tG2">テストフォーム</a>を開設しました。<small>[2017-11-23 16:09 更新]</small>
- <ul>
- <li>実際のエントリーと同じ書式・内容です（ただし完全に同一でない場合があります）。
- <li>入力、送信、自動返信メールなどの動作確認にご利用ください。
- <li>送信ボタンの前に<u>「<strong>私はロボットではありません</strong>」</u>という確認項目があります。あせらず✓を入れ、認証が<strong><u>完了してから</u></strong>送信してください。<br>この項目は実際のエントリー時にもありますので、ご注意ください。
- </ul>
-</ul>
-
+<h3 id="step2">2. メーリングリストへの参加</h3>
+エントリーが確定した参加者へ、2通のメールをお送りします。
+<ul>
+ <li>確定のお知らせメール
+ <li>メーリングリストへの招待メール
+</ul>メール内容をご確認のうえ、まず招待メールからメーリングリストに参加してください。
+<h3 id="step3">3. 参加費の振込</h3>
+<a href="fee.html#participation">参加費のご案内 - 1. 参加費</a>の振込方法をご確認のうえ、指定の口座に参加費をお振込ください。
+<h2 id="deadline">変更等申請締切</h2>
+<table class="deadline">
+<tr><td>参加費振込<td>1/18（木）<small>※1</small>
+<tr><td>途中抜け／途中参加<td>未定
+<tr><td>レセプション<td>未定
+<tr><td>バス利用<td>2/28（水）
+<tr><td>前当日ホテル泊<td>2/28（水）
+<tr><td>打ち上げ1、2次会<td>未定
+<tr><td>Tシャツ・スウェット<td>1/31（水）
+<tr><td>録音・映像<td>未定 <small>※2</small>
+<tr><td>全エントリー締切<td>未定
+</table>
+<small>※1 延滞日数に応じて下記の追徴金あり<table>
+<tr><td>　　2/1（木）まで　<td>+&yen;3,000
+<tr><td>　　2/22（木）まで　<td>+&yen;5,000
+<tr><td>　　それ以降　<td>+&yen;7,000
+</table></small>
+<small>※2 演奏会当日から数ヶ月後の予定</small>
+<h2 id="inquiry">お問い合わせ</h2>
+<script>g('entry')</script>
+エントリー係 松本洋一郎
 </article>
 </section>
 </main>
