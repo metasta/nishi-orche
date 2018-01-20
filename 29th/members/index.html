@@ -60,7 +60,6 @@ tr.u td {
   document.write('<a href="mailto:' + m + '">' + m + '</a>' );
  }
 </script>
-<!--
 <style>
 #countdown {
  width: 320px;
@@ -71,8 +70,8 @@ tr.u td {
  margin: 0;
 }
 p.pre-day {
- font-size: 20pt;
  padding: 0 0 0 1em;
+ font-size: 20pt;
 }
 p.day {
  font-family: 'Fredericka the Great', sans-serif;
@@ -81,21 +80,21 @@ p.day {
  text-align: center;
 }
 p.post-day {
+ padding: 0 1em 0 0;
  font-size: 20pt;
  text-align: right;
- padding: 0 1em 0 0;
 }
 p.post-countdown-msg {
  font-family: 'Cabin Sketch', sans-serif;
+ font-size: 28pt;
  color: #444;
  text-align: center;
- font-size: 28pt;
 }
 </style>
 <div id="countdown"></div>
 <script>
 function countdown(){
- var x = new Date("2018-3-18 00:00:00 +0900");
+ var x = new Date("2018/03/18 00:00:00 +0900");
  var today = new Date();
  var day = Math.ceil((x - today) / (1000 * 60 * 60 * 24));
  if(day > 0){
@@ -108,7 +107,6 @@ function countdown(){
 countdown();
 setInterval(countdown, 1000);
 </script>
--->
 <section>
 <article>
 <h2>合宿</h2>
