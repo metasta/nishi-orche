@@ -1,8 +1,10 @@
 https://nishi-orche.com/29th/
 https://nishi-orche.com/29th/about.html
 https://nishi-orche.com/29th/maestros.html
-https://nishi-orche.com/29th/members.html
+https://nishi-orche.com/29th/alumni.html
 https://nishi-orche.com/29th/contact.html
 https://nishi-orche.com/29th/entry/
 https://nishi-orche.com/29th/entry/fee.html
 https://nishi-orche.com/29th/entry/parts.html
+https://nishi-orche.com/29th/entry/latest_entry_table.html
+https://nishi-orche.com/29th/members/

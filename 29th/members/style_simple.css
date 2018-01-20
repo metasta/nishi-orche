@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#simple header {
+ max-width: 710px;
+ margin: 0 auto;
+ text-align: center;
+}
+#simple header a[href]:hover {
+ text-decoration: none;
+}
+
+#simple header > a {
+ display: inline-block;
+ text-align: left;
+ height: 60px;
+ background: url('../img/logo.svg') left center / 60px auto no-repeat;
+ margin: 16px auto 8px auto;
+}
+#simple header > a p {
+ margin: 0;
+ padding-left: 65px;
+ color: #780000;
+}
+#simple header > a p:first-child {
+ font-size: 12pt;
+ line-height: 22px;
+}
+#simple header > a p:last-child {
+ font-size: 20pt;
+ line-height: 32px;
+}
+#simple header ul {
+ display :block;
+ text-align: center;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+#simple header li {
+ display: inline-block;
+}
+#simple header li > a {
+ display: block;
+ margin: 0 .5em;
+ border-bottom: 3px double rgba(120,0,0,0);
+ transition: .2s;
+}
+#simple header li > a:hover {
+ border-bottom: 3px double rgba(120,0,0,.4);
+}
+#simple header li > a:active {
+ border-bottom: 3px double rgba(120,0,0,1);
+}
+#simple header li > a.active {
+ border-bottom: 3px double rgba(120,0,0,1);
+}
+
+@media screen and (min-width: 660px){
+ #simple header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 16px;
+ }
+ #simple header > a {
+  margin: 0;
+ }
+}
+
+ul.explain {
+ white-space: normal;
+ list-style-type: none;
+ margin: 0 0 0 1em;
+ padding: 0;
+}
+ul.explain > li {
+ margin-bottom:1em;
+}
+ul.explain > li:before {
+ content: '●';
+ margin-left: -1em;
+}
+ul.explain > li.notice:before {
+ content: '※';
+}
+ul.explain > li > ul {
+ padding-left: 1em;
+}
+
+ul.backlink {
+ box-sizing: border-box;
+ margin: 0 auto;
+ max-width: 760px;
+ padding: 25px;
+ list-style-type: none;
+}

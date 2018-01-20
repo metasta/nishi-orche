@@ -60,39 +60,48 @@
 
 <main>
 <style>
-a[href].entry-site {
- display: block;
+.button-links {
  box-sizing: border-box;
- background: #500;
- margin: 20px auto 0 auto;
  max-width: 710px;
- padding: 16px;
- border: 1px solid #500;
- border-radius: 0;
- color: #fff;
+ margin: 20px auto 0 auto;
  font-size: 12pt;
  text-align: center;
- transition: .2s;
+ display: flex;
+ justify-content: space-between;
 }
-a[href].entry-site:focus,
-a[href].entry-site:hover,
-a[href].entry-site:active {
+.button-links > a[href] {
+ flex-grow: 1;
+ flex-basis: 150px;
+ border: 1px solid #500;
+ padding: 16px;
  color: #500;
  background: #fff;
+ transition: .2s;
+}
+.button-links > a[href]:focus,
+.button-links > a[href]:hover,
+.button-links > a[href]:active {
+ color: #fff;
+ background: #500;
  text-decoration: none;
 }
-a[href].entry-site.disabled {
- display: none;
+.button-links > a[href]:not(:first-child){
+ margin-left: -1px;
 }
 @media screen and (min-width: 710px){
- a[href].entry-site {
+ .button-links > a[href] {
   border-radius: 5px;
  }
+ .button-links > a[href]:not(:first-child){
+  margin-left: 10px;
+ }
 }
-
 </style>
 
-<a class="entry-site" href="entry/">エントリー受付へ</a>
+<div class="button-links">
+ <a href="entry/">エントリー受付</a>
+ <a href="members/">ご参加の方へ</a>
+</div>
 
 <section>
 <article>
@@ -158,7 +167,11 @@ table.dl td:first-child {
  </div>
 </article>
 <article>
-<h2>合宿日程</h2>
+<h2 id="ticket">チケット販売</h2>
+現在準備中です。
+</article>
+<article>
+<h2 id="camp">合宿日程</h2>
 <table class="dl">
 <tr><td>日時<td><u>2018年3月18日（日）〜 </u><u>2018年3月23日（金）</u>
 <tr><td>会場<td>愛媛 ホテルアジュール汐の丸<u>（<a target="_blank" href="http://www.hotel-ajour.jp/access/">地図</a>）</u>

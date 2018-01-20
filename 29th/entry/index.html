@@ -59,6 +59,14 @@ table, tr, td {
 tr.u td {
  border-bottom: 1px solid #877;
 }
+table.dl {
+ margin-left: 20px;
+}
+table.dl td:first-child {
+ padding-right: 10px;
+ white-space: nowrap;
+ vertical-align: top;
+}
 </style>
 <script>
  function g(i){
@@ -83,8 +91,6 @@ tr.u td {
 　<a href="#steps2">2. メーリングリストへの参加</a>
 　<a href="#steps3">3. 参加費の振込</a>
 
-<a href="#deadline">変更等締切</a>
-
 <a href="#inquiry">お問い合わせ</a>
 <h2 id="steps">エントリーの流れ</h2>
 <h3 id="step1">1. エントリー申込</h3>
@@ -99,33 +105,28 @@ tr.u td {
  <li>メーリングリストへの招待メール
 </ul>メール内容をご確認のうえ、まず招待メールからメーリングリストに参加してください。
 <h3 id="step3">3. 参加費の振込</h3>
-<a href="fee.html#participation">参加費のご案内 - 1. 参加費</a>の振込方法をご確認のうえ、指定の口座に参加費をお振込ください。
-<h2 id="deadline">変更等締切</h2>
-<table class="deadline">
-<tr><td>参加費振込<td>1/18（木）<small>※1</small>
-<tr><td>途中抜け／途中参加<td>2/28（水）<small>※2</small>
-<tr><td>レセプション<td>2/28（水）<small>※3</small>
-<tr><td>高速バス利用<td>2/28（水）
-<tr><td>前当日ホテル泊<td>2/28（水）
-<tr><td>打ち上げ1、2次会<td>2/28（水）<small>※3</small>
-<tr><td>Tシャツ・スウェット<td>1/31（水）
-<tr><td>録音・映像<td>未定 <small>※4</small>
-<tr><td>全エントリー締切<td>未定
+<table class="dl">
+<tr><td>振込額<td>&yen;79,000（<a href="fee.html#participation">詳細</a>）
+<tr><td>振込先<td>エントリー確定メールに記載
+<tr><td>期限<td><strong>2018年1月18日（木）</strong><br>※1月19日以降にエントリーいただいた方の振込期限は個別にご連絡いたします。
 </table>
-<small>※1 振込延滞日数に応じて以下の追徴金あり<table>
-<tr><td>　　2/1（木）まで　<td>+&yen;3,000
-<tr><td>　　2/22（木）まで　<td>+&yen;5,000
-<tr><td>　　それ以降　<td>+&yen;7,000
-</table>
-※2 途中抜け1日につき&yen;8,500 を返金（<a href="fee.html#absent">詳細</a>）<br>　　期日後の申込に対する返金額は以下の通り
-<table>
-<tr><td>　　3/17（水）まで　<td>&yen;4,500/日
-<tr><td>　　それ以降　<td>&yen;0（返金なし）</table>
-※3 締切後も急な参加は可
-※4 録音・映像の申込は演奏会後も数ヶ月間可能</small>
+振込期限を過ぎると<a href="fee.html#participation">追徴金</a>が発生しますのでご注意ください。
+振込が完了しましたら、会計係 森田智子 <script>g('kaikei')</script> まで次の5点をご連絡ください。<ol style="margin: 0">
+<li>大学名
+<li>学年
+<li>お名前（よみがな）
+<li>振込完了日
+<li>送金人氏名（お名前と同じ場合でも省略せずご記入ください）
+</ol>
+なお途中参加／途中抜けを希望される場合も、通常の参加者と同様に上記参加費の満額をお振込ください。途中抜けに伴う返金・精算は合宿参加時の受付にて行います。（<a href="fee.html#absent">詳細</a>）
 <h2 id="inquiry">お問い合わせ</h2>
+第29回西オケ エントリー係 松本洋一郎
 <script>g('entry')</script>
-エントリー係 松本洋一郎
+
+エントリー内容の変更やご不明な点などあれば遠慮なくお問い合わせください。
+<span id="deadline">なおエントリー内容の変更には<a href="../members/#deadline">期限</a>がございます。お早めにお申し付けください。</span>
+
+
 </article>
 </section>
 </main>
@@ -141,19 +142,9 @@ tr.u td {
       "position": 1,
       "item":
       {
-        "@id": "../members.html",
-        "name": "ご参加の方へ"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item":
-      {
         "@id": "entry/",
-        "name": "エントリー"
+        "name": "エントリー受付"
       }
-    }
   ]
 }
 </script>
