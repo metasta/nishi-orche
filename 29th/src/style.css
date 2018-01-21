@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 html {
  height: 100%;
  -webkit-text-size-adjust: 100%;
@@ -12,7 +11,7 @@ body {
  font-family: 'Hiragino Sans','source-han-sans-japanese',sans-serif;
  font-weight: 200;
  font-size: 10.5pt;
- line-height: 1.7;
+ line-height: 1.75;
 }
 h1,h2,h3,h4,h5,h6 {
  font-weight: inherit;
@@ -53,8 +52,6 @@ u {
  text-decoration: none;
  display: inline-block;
 }
-
-
 
 .first {
  width: auto;
@@ -196,9 +193,20 @@ main > section {
 }
 article {
  white-space: pre-wrap;
+ text-align: justify;
+ letter-spacing: -.02em;
 }
 article address {
  text-align: right;
+}
+table,ol,ul,dl {
+ white-space: normal;
+ text-align: left;
+ margin: 0;
+ box-sizing: border-box;
+}
+table,tr,td {
+ border-collapse: collapse;
 }
 
 a[href].button {
@@ -290,6 +298,20 @@ a[href].button.disabled {
  list-style: none;
  margin: 0;
  padding: 0;
+}
+@media screen and (max-width: 759px){
+ .sitemap {
+  width: 35em;
+  justify-content: flex-start;
+ }
+ .sitemap > li {
+  width: 9em;
+ }
+}
+@media screen and (max-width: 479px){
+ .sitemap {
+  width: 25em;
+ }
 }
 .copyright {
  color: #666;
