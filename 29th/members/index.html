@@ -32,12 +32,43 @@ table.dl td:first-child {
 tr.u td {
  border-bottom: 1px solid #877;
 }
-.size {
+.color-and-size {
  margin: 2em auto;
+}
+.color-sample {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+.color-sample li {
+ display: inline-block;
+ margin: 1px;
+ width: 32px;
+ height: 32px;
+}
+.color-sample li a {
+ display: block;
+ width: 100%;
+ height: 100%;
 }
 .size td {
  text-align: center;
  padding-right:1em;
+}
+.badge-container {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ border: 1px solid #fff;
+}
+.badge-container a {
+ display: block;
+ width: 135px;
+ height: 135px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ margin: -5px -10px;
 }
 .deadline td {
  padding-right: 1em;
@@ -129,7 +160,16 @@ setInterval(countdown, 1000);
 <h2 id="goods">グッズ情報</h2>
 <h3>Tシャツ &yen;2,300</h3>
 <div class="flex">
-<a data-lightbox="t-shirt"  data-title="ロシアの動物（ホッキョククマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="t-shirt-design.png"><img style="width:300px" src="t-shirt.png"/></a>
+<a data-lightbox="t-shirt"  data-title="ロシアの動物（ホッキョクグマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="t-shirt-design.svg"><img style="width:300px" src="t-shirt-white.png"/></a>
+<div class="color-and-size">
+<ul class="color-sample">
+<li style="background:#f9f9fa"><a data-lightbox="t-shirt" data-title="ホワイト" href="t-shirt-white.png"></a>
+<li style="background:#ffc8d1"><a data-lightbox="t-shirt" data-title="ライトピンク" href="t-shirt-lightpink.png"></a>
+<li style="background:#ffe700"><a data-lightbox="t-shirt" data-title="デイジー" href="t-shirt-daisy.png"></a>
+<li style="background:#aced53"><a data-lightbox="t-shirt" data-title="ライトグリーン" href="t-shirt-lightgreen.png"></a>
+<li style="background:#b2d6ee"><a data-lightbox="t-shirt" data-title="ライトブルー" href="t-shirt-lightblue.png"></a>
+<li style="background:#818c90"><a data-lightbox="t-shirt" data-title="グレー" href="t-shirt-gray.png"></a>
+</ul>
 <table class="size">
 <tr class="u"><td>Tシャツ<td><ruby>身丈<rt>みたけ</ruby><td><ruby>身巾<rt>みはば</ruby><td><ruby>袖丈<rt>そでたけ</ruby>
 <tr><td>150 (WS)<td>59<td>42<td>18
@@ -141,10 +181,15 @@ setInterval(countdown, 1000);
 <tr><td>XXL<td>77<td>60<td>25
 </table>
 </div>
+</div>
 <small>※予告なくデザインを変更する場合があります。</small>
 <h3>スウェット &yen;3,700</h3>
 <div class="flex">
-<a data-lightbox="sweat" data-title="ロシアの動物（ホッキョククマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="sweat-pants-design.png"><img style="width:300px" src="sweat-pants.png"/></a>
+<a data-lightbox="sweat" data-title="ロシアの動物（ホッキョクグマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="sweat-pants-design.svg"><img style="width:300px" src="sweat-pants.png"/></a>
+<div class="color-and-size">
+<ul class="color-sample">
+<li style="background:#c0bebf"><a data-lightbox="sweat" data-title="ライトグレー" href="sweat-pants.png"></a>
+</ul>
 <table class="size">
 <tr class="u"><td>スウェット<td><ruby>総丈<rt>そうたけ</ruby><td>ウエスト<td>股下
 <tr><td>WM<td>94<td>70-78<td>70
@@ -154,6 +199,16 @@ setInterval(countdown, 1000);
 <tr><td>XL<td>108<td>82-90<td>78
 <tr><td>XXL<td>110<td>85-93<td>80
 </table>
+</div>
+</div>
+<small>※予告なくデザインを変更する場合があります。</small>
+<h3>缶バッジ <small>（合宿所限定販売、価格未定）</small></h3>
+<div class="badge-container">
+<a data-lightbox="badge" href="badge1.png" style="background-image:url('badge1.png')" data-title="1 ホッキョクグマ（ペールイエロー）"></a>
+<a data-lightbox="badge" href="badge2.png" style="background-image:url('badge2.png')" data-title="2 シベリアビッグホーン（ライトグリーン）"></a>
+<a data-lightbox="badge" href="badge3.png" style="background-image:url('badge3.png')" data-title="3 アザラシ（ライトブルー）"></a>
+<a data-lightbox="badge" href="badge4.png" style="background-image:url('badge4.png')" data-title="4 ペンギン（ピンク）"></a>
+<a data-lightbox="badge" href="badge5.png" style="background-image:url('badge5.png')" data-title="5 オオワシ（パープル）"></a>
 </div>
 <small>※予告なくデザインを変更する場合があります。</small>
 <h3>録音・映像</h3>
