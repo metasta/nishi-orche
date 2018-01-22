@@ -310,7 +310,7 @@ a[href].button.disabled {
 }
 @media screen and (max-width: 479px){
  .sitemap {
-  width: 25em;
+  width: 24em;
  }
 }
 .copyright {
