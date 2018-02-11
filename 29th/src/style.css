@@ -299,6 +299,15 @@ a[href].button.disabled {
  margin: 0;
  padding: 0;
 }
+.sitemap > li {
+ color: #222;
+ font-weight: 300;
+}
+.sitemap > li > ul {
+ color: #666;
+ font-weight: 200;
+}
+
 @media screen and (max-width: 759px){
  .sitemap {
   width: 35em;
