@@ -118,14 +118,19 @@ p.post-countdown-msg {
 <div id="countdown"></div>
 <script>
 function countdown(){
- var x = new Date("2018/03/18 00:00:00 +0900");
+ var day_camp = new Date("2018/03/18 00:00:00 +0900");
+ var day_stage = new Date("2018/03/24 00:00:00 +0900");
  var today = new Date();
- var day = Math.ceil((x - today) / (1000 * 60 * 60 * 24));
- if(day > 0){
-  document.getElementById("countdown").innerHTML = '<p class="pre-day">あと</p><p class="day">' + day + '</p><p class="post-day">日</p>';
+ var days2camp  = Math.ceil((day_camp  - today) / (1000 * 60 * 60 * 24));
+ var days2stage = Math.ceil((day_stage - today) / (1000 * 60 * 60 * 24));
+ if(days2camp > 0){
+  document.getElementById("countdown").innerHTML = '<p class="pre-day">合宿開始まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
+ }
+ else if(days2stage > 0){
+  document.getElementById("countdown").innerHTML = '<p class="pre-day">本番まで</p><p class="day" style="color:#600">' + days2stage + '</p><p class="post-day">日</p>';
  }
  else {
-  document.getElementById("countdown").innerHTML = '<p class="post-countdown-msg">Have a nice trip !</p><img width="320" height="320" src="bear.svg" />';
+  document.getElementById("countdown").innerHTML = '<p class="post-countdown-msg">Good Luck !</p><img width="320" height="320" src="bear.svg" />';
  }
 }
 countdown();
