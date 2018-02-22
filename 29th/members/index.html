@@ -124,7 +124,7 @@ function countdown(){
  var days2camp  = Math.ceil((day_camp  - today) / (1000 * 60 * 60 * 24));
  var days2stage = Math.ceil((day_stage - today) / (1000 * 60 * 60 * 24));
  if(days2camp > 0){
-  document.getElementById("countdown").innerHTML = '<p class="pre-day">合宿開始まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
+  document.getElementById("countdown").innerHTML = '<p class="pre-day">合宿まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
  }
  else if(days2stage > 0){
   document.getElementById("countdown").innerHTML = '<p class="pre-day">本番まで</p><p class="day" style="color:#600">' + days2stage + '</p><p class="post-day">日</p>';
@@ -139,10 +139,12 @@ setInterval(countdown, 1000);
 <section>
 <article>
 <h2>合宿</h2>
-<u>2018年3月18日（日）〜 </u><u>3月23日（金）</u>
+<u>2018年3月18日（日）〜 </u><u>3月23日（金）</u><u>（5泊6日3食付）</u>
 
 ホテルアジュール汐の丸<u>（<a target="_blank" href="http://www.hotel-ajour.jp/access/">地図</a>）</u>
 <u>〒799-1525 愛媛県今治市湯ノ浦30番地</u>
+
+合宿スケジュールや持参品、アメニティなどについては後日公開する「合宿のしおり」でご案内します。
 <h2>公演</h2>
 <u>2018年3月24日（土）</u><u>17:30<small>（開場 17:00）</small></u>
 
@@ -160,8 +162,13 @@ setInterval(countdown, 1000);
 </ol><u>ラフマニノフ／</u><u>交響曲第2番ホ短調</u>
 
 指揮 中田延亮
+<h2 id="party">打ち上げ</h2>
+<u>1次会 3月24日（土）21:30-</u><u> @ANAクラウンプラザホテル広島 <small><a href="https://goo.gl/maps/LWy4ER9BziC2" target="_blank">地図</a></small></u>
+<u>2次会 3月25日（日）00:00-</u><u> @北海道食市場 丸海屋 立町店 <small><a href="https://goo.gl/maps/hZEk8hh4Kmt" target="_blank">地図</a></small></u>
+
+キャンセルは2月28日まで、参加はいつでも歓迎です！
 <h2 id="journal">西オケ報</h2>
-現在準備中です。
+<a target="_blank" href="29%E8%A5%BF%E3%82%AA%E3%82%B1%E5%A0%B1.pdf">29西オケ報.pdf</a>
 <h2 id="goods">グッズ情報</h2>
 <h3>Tシャツ &yen;2,300</h3>
 <div class="flex">
