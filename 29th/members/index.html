@@ -75,6 +75,18 @@ tr.u td {
  background-repeat: no-repeat;
  margin: -5px -10px;
 }
+.deadline-container {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+}
+.deadline {
+ margin-right: 2em;
+ margin-bottom: 1em;
+}
+.deadline-notes {
+ padding-left: 1em;
+}
 .deadline td {
  padding-right: 1em;
  vertical-align: top;
@@ -156,13 +168,14 @@ setInterval(countdown, 1000);
 <li><a href="#deadline">変更受付期限</a>・<a href="#inquiry">連絡先</a>
 </ol>
 <h2 id="camp">合宿</h2>
-<u>2018年3月18日（日）〜 </u><u>3月23日（金）</u><u>（5泊6日3食付）</u>
+<u>2018年3月18日（日）〜 </u><u>3月23日（金）</u>
 
 ホテルアジュール汐の丸
 <a href="http://www.hotel-ajour.jp/access/" target="_blank">〒799-1525 今治市湯ノ浦30</a>
 
-合宿所への直接の連絡はご遠慮ください。
+合宿は5泊6日、3食付です。
 合宿スケジュールや持参品、アメニティなどについては後日公開する「合宿のしおり」でご案内します。
+合宿所への直接の連絡はご遠慮ください。
 
 合宿所係 藤井泰斗・奥崎体
 <script>g('gasshukujo')</script>
@@ -173,16 +186,14 @@ setInterval(countdown, 1000);
 
 <h3 id="hotel">ホテル 1泊 &yen;9,500</h3>ホテル法華クラブ広島
 <a href="https://www.hokke.co.jp/hiroshima/access/" target="_blank">〒730-0037 広島市中区中町7-7</a>
-本番前日23日・当日24日のホテルです。
+本番前日23日・当日24日宿泊のホテルです。
 
 前当日係 金井陽奈・山口栞
 <script>g('zentoujitsu')</script>
 
 <h2 id="concert">公演</h2>
 <u>2018年3月24日（土）</u><u>17:30<small>（開場 17:00）</small></u>
-
-曲目
-<u>チャイコフスキー／</u><u>スラヴ行進曲</u>
+<h3 id="#program">曲目</h3><u>チャイコフスキー／</u><u>スラヴ行進曲</u>
 <u>プロコフィエフ／</u><u>バレエ音楽</u><u>『ロメオとジュリエット』より</u>
 <ol>
 <li>モンタギュー家とキャピュレット家<u><small>（第2組曲第1曲）</small></u>
@@ -276,6 +287,7 @@ CD・DVD係 遠藤正也
 <script>g('video')</script>
 
 <h2 id="deadline">変更受付期限</h2>
+<div class="deadline-container">
 <table class="deadline">
 <tr><td>参加キャンセル<td>2/28（水）<small>※1</small>
 <tr><td>途中抜け／途中参加<td>2/28（水）<small>※2</small>
@@ -286,16 +298,14 @@ CD・DVD係 遠藤正也
 <tr><td>Tシャツ・スウェット<td>2/28（水）
 <tr><td>録音・映像<td>未定 <small>※4</small>
 </table>
-<small>※1 参加費 &yen;79,000 全額を返金<br>　　期日後の返金額は以下の通り<table class="dl">
+<div class="deadline-notes"><small>※1 参加費 &yen;79,000 全額を返金<br>　　期日後の返金額は
+<table class="dl">
 <tr><td>　　3/17（水）まで<td>&yen;40,000
-<tr><td>　　それ以降<td>&yen;0（返金なし）</table>
-※2 途中抜け1日につき&yen;8,500 を返金（<a href="../entry/fee.html#absent">詳細</a>）<br>　　期日後の申込に対する返金額は以下の通り
+<tr><td>　　それ以降<td>&yen;0（返金なし）</table>※2 途中抜け1日につき&yen;8,500 を返金（<a href="../entry/fee.html#absent">詳細</a>）<br>　　期日後の返金額は
 <table class="dl">
 <tr><td>　　3/17（水）まで<td>&yen;4,500/日
-<tr><td>　　それ以降<td>&yen;0（返金なし）</table>
-※3 不参加→参加の変更は締切後も可
-※4 録音・映像の申込は演奏会後も数ヶ月間可</small>
-
+<tr><td>　　それ以降<td>&yen;0（返金なし）</table>※3 不参加→参加の変更は締切後も可
+※4 録音・映像の申込は演奏会後も数ヶ月間可</small></div></div>
 <h2 id="inquiry">変更連絡先</h2>
 第29回西オケ エントリー係 松本洋一郎
 <script>g('entry')</script>
