@@ -57,6 +57,7 @@ if (footer) {
  +  '</ul>'
  + '<li><a href="alumni.html">OB・OGの方へ</a>'
  +  '<ul>'
+ +   '<li><a href="alumni.html#ob-entry">エントリーのご案内</a>'
  +   '<li><a href="alumni.html#donation">ご寄附のお願い</a>'
  +  '</ul>'
  + '<li><a href="entry/">エントリー受付</a>'
