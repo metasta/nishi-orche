@@ -70,7 +70,7 @@ if (footer) {
  +  '</ul>'
  + '<li><a href="members/">ご参加の方へ</a>'
  +  '<ul>'
- +   '<li><a href="members/#journal">西オケ報</a>'
+ +   '<li><a href="members/#newsletter">西オケ報</a>'
  +   '<li><a href="members/#camp">合宿</a>'
  +   '<li><a href="members/#reception">レセプション</a>'
  +   '<li><a href="members/#zenjitsu">前日</a>'

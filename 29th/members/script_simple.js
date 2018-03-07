@@ -15,7 +15,7 @@ var header = document.createElement('header');
 header.innerHTML = ''
  + '<a href="."><p>第29回西オケ</p><p>ご参加の方へ</p></a>'
  + '<ul>'
- + '<li>' + navItem('#journal',   '西オケ報')
+ + '<li>' + navItem('#newsletter',   '西オケ報')
  + '<li><a href="..">ホーム</a>'
  + '</ul>';
 document.body.insertBefore(header, document.body.firstChild);
