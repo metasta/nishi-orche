@@ -81,6 +81,11 @@ button:active {
 input[type="hidden"]{
  display: none;
 }
+button.disabled {
+ pointer-events: none;
+ background-color: #cdcdcd;
+ color: #fff;
+}
 
 table.staff {
  width: 100%;
@@ -145,28 +150,19 @@ function g(s){
 </script>
 <article>
 <h2 id="mail-form">メールフォーム</h2>
-以下のフォームよりお問い合わせを承っております。
+※フォームからのお問い合わせ受付は公演後6ヶ月をもって終了しました。
 
 <form id="contactform" method="post" accept-charset="UTF-8">
  <label for="name">お名前</label>
- <input type="text" id="name" name="name" required />
+ <input type="text" id="name" name="name" required disabled/>
  <label for="mail">メールアドレス</label>
- <input type="email" id="mail" name="mail" required />
+ <input type="email" id="mail" name="mail" required disabled/>
  <label for="message">お問い合わせ内容</label>
- <textarea id="message" name="message" required></textarea>
+ <textarea id="message" name="message" required disabled></textarea>
  <input type="hidden" id="_id" name="_id" />
- <button type="submit">送信</button>
+ <button type="submit" class="disabled" disabled>送信</button>
 </form>
-<!--
-<h2 id="faq">よくあるご質問</h2>
-（準備中）
-<dl>
-<dt>Q.
-<dd>A.
-<dt>Q.
-<dd>A.
-</dl>
--->
+
 <h2 id="staff">第29回実行委員</h2>
 <table class="staff">
 <tr><th>役職<th>名前<th>連絡先
@@ -198,12 +194,6 @@ function g(s){
 
 <div id="tools"><!-- script.js で記述 --></div>
 <footer id="footer"><!-- script.js で記述 --></footer>
-<script>
-var form = document.getElementById('contactform');
-var m = 'htt' + 'ps://ss' + '1.xre' + 'a.c' + 'om/metas' + 'ta.s602.xr' + 'ea.c' + 'om/nis' + 'hiorch' + 'e29-mai' + 'lfo' + 'rm/';
-form.setAttribute('action', m);
-document.getElementById('_id').setAttribute('value','eeKbc3GeFpMJL2m2');
-</script>
 <script src="src/script.js?2018-03-07"></script>
 <script src="src/blazy.js"></script>
 <script type="application/ld+json">
