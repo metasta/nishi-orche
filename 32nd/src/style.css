@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+
+@font-face {
+  font-family: 'Gothic';
+  src: local('Hiragino Maru Gothic ProN'),
+    local('メイリオ');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  font: 10pt/1.8 Gothic, sans-serif;
+  background: #feffff;
+}
+
+iframe {
+  border: none;
+  width: 960px;
+  vertical-align: bottom;
+}
+
+iframe#header {
+  height: 265px;
+}
+
+iframe#footer {
+  /*height: 370px;*/
+  height: 310px
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  transition: all .2s linear;
+  color: #222;
+  text-decoration: none;
+}
+
+article a[href] {
+  color: #952;
+}
+
+article a[href]:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  box-shadow: 0 0 50px 1px rgba(0, 0, 0, .4);
+  background: #feffff;
+}
+
+body>main {
+  height: auto;
+}
+
+nav.breadcrumb {
+  margin-left: 50px;
+}
+
+nav.breadcrumb p {
+  display: inline-block;
+  margin: 0;
+}
+
+nav.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+}
+
+figcaption {
+  position: absolute;
+  bottom: .5em;
+  right: 1em;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, .8);
+}
+
+article {
+  white-space: pre-wrap;
+  margin: 0 100px;
+  overflow: hidden;
+}
+
+article h1,
+article h2,
+article h3 {
+  white-space: normal;
+  display: inline;
+  margin: 0;
+}
+
+article h1:after,
+article h2:after,
+article h3:after {
+  content: '\A';
+}
+
+article ul {
+  white-space: normal;
+}
+
+article address {
+  font-style: normal;
+  text-align: right;
+  padding-right: 1em;
+}
+
+article table.schedule td:first-child {
+  text-align: right;
+}
+
+article h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  border-bottom: 3px double #bbb;
+  margin: 0;
+}

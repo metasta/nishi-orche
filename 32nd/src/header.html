@@ -1,0 +1,147 @@
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<base target="_top">
+<style>
+  @font-face {
+    font-family: 'Gothic';
+    src: local('Hiragino Maru Gothic ProN'),
+      local('メイリオ');
+  }
+
+  @font-face {
+    font-family: 'YuGo';
+    src: local('游ゴシック'), local('YuGothic');
+  }
+
+  html {
+    border: none;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+    font: 10pt/1.8 Gothic, sans-serif;
+    background-image: linear-gradient(#7eebdd, #ffffff);
+  }
+
+  a {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    color: #222;
+    text-decoration: none;
+  }
+
+  .bg {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), url('header6.jpg');
+    background-repeat: no-repeat;
+  }
+  /*.bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }*/
+
+  header {
+    margin: 0;
+    /*padding-left: 160px;
+    background: url('32logo1.png');
+    background-repeat: no-repeat;
+    background-position: 10,2;*/
+  }
+
+  header div {
+    background: url('logo.svg');
+    background-repeat: no-repeat;
+    background-position: 20, 0;
+    background-size: 22%;
+  }
+
+  header h1,
+  header h2 {
+    margin: 0;
+    padding-right: 45px;
+    font-family: YuGo, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    color: #222;
+    line-height: 1;
+    text-align: right;
+  }
+
+  header h1 {
+    display: table-cell;
+    width: 960px;
+    height: 180px;
+    margin: auto;
+    font-size: 26pt;
+    vertical-align: bottom;
+    text-align: right;
+  }
+
+  header h2 {
+    height: 40px;
+    font-size: 18pt;
+    vertical-align: top;
+  }
+
+  .global-nav {
+    text-align: center;
+  }
+
+  .global-nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .global-nav .nav-item a {
+    display: inline-block;
+    width: 150px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 8px;
+    color: #4b4b4b;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: 0.15s;
+  }
+
+  .global-nav .nav-item a:hover {
+    background: #d03c56;
+    color: #fff;
+  }
+</style>
+<section class="bg">
+  <a href="../">
+    <header>
+      <div>
+        <h1><small>第32回</small>西日本医科学生<br>オーケストラ・フェスティバル</h1>
+        <h2>the 32nd West Japan Medical Students' Orchestra Festival</h2>
+      </div>
+    </header>
+  </a>
+  <nav class="global-nav">
+    <ul>
+      <li class="nav-item"><a href="../about.html">西オケとは</a>
+      <li class="nav-item"><a href="../almni.html">OB・OGの方へ</a>
+      <li class="nav-item"><a href="../entry.html">エントリー</a>
+      <li class="nav-item"><a href="../members.html">ご参加の方へ</a>
+      <li class="nav-item"><a href="../contact.html">お問い合わせ</a>
+    </ul>
+  </nav>
+</section>
+
+</html>

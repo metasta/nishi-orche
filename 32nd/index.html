@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="description" content="西日本医科学生オーケストラ・フェスティバル、通称「西オケ」。第32回は2021年3月21日（日）広島開催。合宿は 3/15-3/20 岡山にて。">
+<meta name="author" content="日本医科学生オーケストラ・フェスティバル委員会">
+<meta name="apple-mobile-web-app-title" content="32th西オケ">
+<title>第32回西オケ(西日本医科学生オーケストラ・フェスティバル)</title>
+<link rel="canonical" href="https://nishiorche32.github.io/32th/">
+<link rel="stylesheet" href="src/normalize.css">
+<link rel="stylesheet" type="text/css" href="src/style.css">
+<link rel="icon" href="src/favicon.ico">
+<style>
+  .flex-container a:active,
+  .flexslider a:active,
+  .flex-container a:focus,
+  .flexslider a:focus {
+    outline: none;
+  }
+
+  .slides,
+  .flex-control-nav,
+  .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .flexslider {
+    margin: 0;
+    padding: 0;
+  }
+
+  .flexslider .slides>li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flexslider .slides img {
+    width: 100%;
+    display: block;
+  }
+
+  .flex-pauseplay span {
+    text-transform: capitalize;
+  }
+
+  .slides:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+
+  html[xmlns] .slides {
+    display: block;
+  }
+
+  * html .slides {
+    height: 1%;
+  }
+
+  .no-js .slides>li:first-child {
+    display: block;
+  }
+
+  .flexslider {
+    margin: 0 0 60px;
+    position: relative;
+    zoom: 1;
+  }
+
+  .flex-viewport {
+    max-height: 2000px;
+    transition: all 1s ease;
+  }
+
+  .loading .flex-viewport {
+    max-height: 300px;
+  }
+
+  .flexslider .slides {
+    zoom: 1;
+  }
+
+  .carousel li {
+    margin-right: 5px;
+  }
+
+  .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+  }
+
+  .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  .flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    text-indent: -9999px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
+  }
+
+  .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, .7);
+  }
+
+  .flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, .9);
+    cursor: default;
+  }
+</style>
+<script src="src/google-analytics.js"></script>
+
+<main lang="ja">
+  <iframe id="header" src="src/header.html"></iframe>
+  <div class="flexslider">
+    <ul class="slides">
+
+      <!--
+スライダー [2016.06.08 松本]
+
+  左右にスライドする画像アルバムのこと。
+
+  例1
+  <li><figure><img alt="" src="img/[ここに画像ファイル名]"><figcaption>[ここに画像右下のコメント]</figcaption></figure>
+
+  例2 画像右下のコメントが不要な場合
+  <li><figure><img alt="" src="img/[ここに画像ファイル名]"></figure>
+
+  画像の枚数に制限はない。
+
+  注意
+    ・いちおう肖像権とか考えて公開する
+    ・画像サイズは 960x540 ピクセルにそろえる(画像編集できる人に任せる)
+    ・画像ファイル名はあまり適当に(gazou.jpgとか)せず、将来も混乱・重複しない名前をつけて img フォルダに入れる
+-->
+      <li>
+        <figure><img alt="" src="img/nishiorche30th-3.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/nishiorche30th-1.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/nishiorche30th-2.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/hiroshima-2467918_1280.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/hiroshima-4704922_1920.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <a href="https://www.flickr.com/photos/7284762@N07/6158934754"><figure><img alt="" src="img/6158934754_c2bf4dc250_k.png">
+          <figcaption>kagawa_ymgFollow IMG_6397 7回裏後</figcaption>
+        </figure></a>
+      <li>
+        <figure><img alt="" src="img/shukukeien.png">
+          <figcaption></figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/hiroshimajou.png">
+          <figcaption></figcaption>
+        </figure>
+      <!--<li>
+        <figure><img alt="" src="img/2014autumn.jpg">
+          <figcaption>2014.09.28 Autumn Concert</figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/2014autumn-wq.jpg">
+          <figcaption>2014.09.28 Autumn Concert</figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/2014kasumifest-wind.jpg">
+          <figcaption>2014.11.09 霞祭</figcaption>
+        </figure>
+      <li>
+        <figure><img alt="" src="img/2014autumn-gp.jpg">
+          <figcaption>2014.09.28 Autumn Concert</figcaption>
+        </figure>-->
+
+
+    </ul>
+  </div>
+
+  <!--
+トップページ本文 [2016.06.08 松本]
+
+  下の「編集ここから」から「編集ここまで」までの間を編集する。
+  改行や空白もそのまま表示されるよう設定してある。
+-->
+
+  <article>
+    <!-- 編集ここから -->
+    <h2>演奏会のご案内</h2>
+  </article>
+  <style>
+    table.dl {
+      border-collapse: collapse;
+      border: none;
+    }
+
+    table.dl td:first-child {
+      width: 2.5em;
+      vertical-align: top;
+    }
+
+    .concert {
+      white-space: normal;
+      margin-top: 1em;
+    }
+
+    .concert-flyer {
+      display: block;
+      margin: 0 auto 1em auto;
+      box-sizing: border-box;
+      width: 270px;
+      height: 382px;
+      border: 1px solid #ddd;
+      background: #ddd center center / cover no-repeat;
+    }
+
+    .concert-detail {
+      display: block;
+      margin: 0 auto;
+      max-width: 410px;
+    }
+
+    .concert-title {
+      font-size: 110%;
+      line-height: 1.4;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 760px) {
+
+      .concert-flyer,
+      .concert-detail {
+        vertical-align: top;
+      }
+
+      .concert-flyer {
+        display: inline-block;
+        margin: 0 1.5em 0 0;
+      }
+
+      .concert-detail {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  </style>
+  <article id="concert" class="concert">
+    <a class="concert-flyer" data-lightbox="flyer" href="img/flyer-kari.png" style="background-image:url(img/flyer-kari.png)"></a>
+    <div class="concert-detail">
+      <p class="concert-title">第32回 西日本医科学生オーケストラ・フェスティバル</p>
+      <table class="dl">
+        <tr>
+          <td>日時
+          <td>2021年3月21日（日）15:30 開演（15:00 開場）
+        <tr>
+          <td>会場
+          <td><a target="_blank" href="http://www.rcchall.jp/hall/">広島 上野学園ホール</a>（<a href="https://goo.gl/maps/ouakhpUh9QhFstZUA" target="_blank">地図</a>）
+        <tr>
+          <td>曲目
+            <td>曲目未定
+            <!--<td><u>ラフマニノフ／</u><u>交響曲第2番ホ短調</u>
+        <tr>
+          <td>
+          <td><u>プロコフィエフ／</u><u>バレエ音楽</u><u>『ロメオとジュリエット』より</u>
+        <tr>
+          <td>
+          <td><u>チャイコフスキー／</u><u>スラヴ行進曲</u>-->
+        <tr>
+          <td>指揮
+          <td>中田延亮
+        <tr>
+          <td>料金
+            <td>全席自由　前売500円・当日800円(予定)
+        <!--<tr>
+          <td>
+            <td><u><a target="_blank" href="http://ticket.pia.jp/pia/event.ds?eventCd=1802402">チケットぴあ</a>　</u><u>Pコード 106808　</u><u>TEL 0570-02-9999</u>-->
+        <tr>
+          <td>主催
+          <td>西日本医科学生オーケストラ連盟
+        <tr>
+          <td>後援
+          <td>一般社団法人 広島県医師会<br>一般社団法人 広島市医師会<br>一般社団法人 広島県歯科医師会<br>一般社団法人 広島市歯科医師会<br>公益社団法人 広島県薬剤師会<br>一般社団法人 広島市薬剤師会<br>広島県教育委員会<br>広島市教育委員会<br>NHK広島放送局<br>中国新聞社
+      </table>
+    </div>
+  </article>
+  <article>
+    <h2 id="ticket">チケット販売</h2>
+    前売り500円・当日800円(予定)
+    販売方法については随時お知らせ致します
+    <!--<span style="text-align: left">オンライン購入：<a target="_blank" href="http://ticket.pia.jp/pia/event.ds?eventCd=1802402">チケットぴあ</a>
+      <u>電話購入：</u><u>チケットぴあ窓口 0570-02-9999　</u><u>Pコード 106808</u></span>
+    購入締切：2018年3月23日（金）-->
+  </article>
+  <article>
+    <h2 id="camp">合宿日程</h2>
+    <table class="dl">
+      <tr>
+        <td>日時
+        <td>2021年3月15日（月）〜 2021年3月20日（土）
+      <tr>
+        <td>会場
+        <td><a href="http://www.kurashiki-seaside.co.jp/" target="_blank">岡山 倉敷シーサイドホテル</a>（<a href="https://goo.gl/maps/iGqDmX6gcNFGvRX99" target="_blank">地図</a>）
+    </table>
+  </article>
+  <style>
+    article.link small {
+      font-size: 70%
+    }
+
+    @media screen and (min-width: 430px) {
+
+      article.link small:before {
+        content: "（"
+      }
+
+      article.link small {
+        font-size: 100%
+      }
+
+      article.link small:after {
+        content: "）"
+      }
+    }
+  </style>
+  <!--<article class="link">
+    <h2 id="link">リンク</h2>-->
+  <!-- 1981 <a href="http://natsuoke.com/" target="_blank">夏オケ <small>全日本医科学生オーケストラフェスティバル</small></a>
+    <!-- 1988 <a href="http://haruokehp.com/" target="_blank">春オケ <small>関東医科学生オーケストラフェスティバル</small></a>
+    <!-- 1993 <a href="http://kitaoke.com/" target="_blank">北オケ <small>北日本医科学生オーケストラフェスティバル</small></a>
+    <!-- 1994 <a href="http://music.geocities.jp/kansaiioke/" target="_blank">関西医オケ <small>関西医科学生交響楽団</small></a>
+    <!-- 2011 <a href="http://www.geocities.jp/igen5243/" target="_blank">医弦 <small>医系弦楽オーケストラアンサンブル</small></a>
+    <!-- 2013 <a href="http://icon.webcrow.jp/" target="_blank">医コン <small>医科学生コンチェルトオーケストラ</small></a>
+    <!-- 2014 <a href="http://ikasui.webcrow.jp/" target="_blank">医科吹 <small>医科学生ウィンドオーケストラ</small></a>
+    <!-- 2016 <a href="http://hayabusa-sym.com/" target="_blank">はやぶさ <small>交響楽団はやぶさ</small></a>
+    <!-- 2017 <a href="https://harusui.amebaownd.com/" target="_blank">春吹 <small>医科学生ウインドオーケストラ春季演奏会</small></a>
+    <!-- 2017 <a href="http://kansaimedwinds.web.fc2.com/" target="_blank">関医吹 <small>関西医科学生吹奏楽団</small></a>
+
+    <!-- 1990 <a href="http://plaza.umin.ac.jp/~ikaoke/" target="_blank">医家管 <small>全日本医家管弦楽団</small></a>
+    <!-- 200?入学 2013 <a href="https://wakuwaku-orchestra.jimdo.com/" target="_blank">Orchestra W</a>
+    <!-- 2010入学 2018 <a href="http://10orch10.starfree.jp/" target="_blank">Orchestra X</a>
+    <!-- 2012入学 2016 <a href="http://musunique.wp.xdomain.jp/" target="_blank">オーケストラ・ミュズニック</a>
+    <!-- 2014入学 2018 <a href="http://orcirene.html.xdomain.jp/" target="_blank">オーケストライレーネ</a>
+  </article>-->
+
+  <iframe id="footer" src="src/footer.html"></iframe>
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="src/slider/jquery.flexslider-min.js"></script>
+<script>
+  $(function() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      slideshowSpeed: 7000,
+      directionNav: false
+    });
+  });
+</script>
