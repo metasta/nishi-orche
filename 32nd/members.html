@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="src/normalize.css">
 <link rel="stylesheet" type="text/css" href="src/style.css">
 <link rel="icon" href="src/favicon.ico">
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" type="text/javascript"></script>
 <script src="src/google-analytics.js"></script>
 
 <main lang="ja">
@@ -27,7 +29,7 @@
     div.flex {
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      /*justify-content: center;*/
     }
 
     table.dl td:first-child {
@@ -41,7 +43,15 @@
     }
 
     .color-and-size {
-      margin: 2em auto;
+      /*margin: 2em auto;*/
+      margin-right: auto;
+      margin-left: 10%;
+      white-space: normal;
+
+    }
+
+    .sweatmargin {
+      margin-top: 5%;
     }
 
     .color-sample {
@@ -67,6 +77,10 @@
     .size td {
       text-align: center;
       padding-right: 1em;
+      white-space: normal;
+      margin: 0;
+      box-sizing: border-box;
+      border-collapse: collapse;
     }
 
     .badge-container {
@@ -108,6 +122,7 @@
     .deadline td:last-child {
       padding: 0;
     }
+
     .coming-soon {
       display: block;
       margin: 0 auto;
@@ -158,13 +173,13 @@
   <div id="countdown"></div>
   <script>
     function countdown() {
-      var day_camp = new Date("2021/03/18 00:00:00 +0900");
-      var day_stage = new Date("2021/03/24 00:00:00 +0900");
+      var day_camp = new Date("2021/03/17 00:00:00 +0900");
+      var day_stage = new Date("2021/03/21 00:00:00 +0900");
       var today = new Date();
       var days2camp = Math.ceil((day_camp - today) / (1000 * 60 * 60 * 24));
       var days2stage = Math.ceil((day_stage - today) / (1000 * 60 * 60 * 24));
       if (days2camp > 0) {
-        document.getElementById("countdown").innerHTML = '<p class="pre-day">合宿まで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
+        document.getElementById("countdown").innerHTML = '<p class="pre-day">初合わせまで</p><p class="day">' + days2camp + '</p><p class="post-day">日</p>';
       } else if (days2stage > 0) {
         document.getElementById("countdown").innerHTML = '<p class="pre-day">本番まで</p><p class="day" style="color:#600">' + days2stage + '</p><p class="post-day">日</p>';
       } else {
@@ -185,51 +200,73 @@
 
       <h2>目次</h2>
       <ol>
+        <li><a href="#outline">開催概要</a>
         <li><a href="#prep">準備</a>
-        <li><a href="#camp">合宿</a>・<a href="#reception">レセプション</a>
-        <li><a href="#zenjitsu">前日</a>（<a href="#bus">バス</a>・<a href="#rehearsal">前日練</a>・<a href="#hotel">ホテル</a>）
+        <li><a href="#practice">練習</a>
         <li><a href="#concert">公演</a>
-        <li><a href="#party">打ち上げ</a>
+        <li><a href="#party">打ち上げ・レセプション</a>
         <li><a href="#goods">グッズ情報</a>
         <li><a href="#deadline">変更受付期限</a>・<a href="#inquiry">連絡先</a>
       </ol>
+      <h2 id="outline">開催概要</h2>
+      今回は合宿を<u><font color="red">中止</font></u>とし、主管で用意したホテルに泊まっていただき、練習会場に通う形式をとります。
+      それに伴い当初の期間を変更させていただきます。ご了承ください。
+
+      <h3>練習・宿泊</h3>
+      <u>2021年3月<font color="red">17日（水）</font>~ 3月20日（土）</u>
+
+      <h3>公演</h3>
+      <u>2021年3月21（日）</u>
+
+      <h3>宿泊地</h3>
+      ホテル呉竹荘 広島大手町
+      <u><a href="http://www.kuretake-inn.com/hiroshima/access/" target="_blank">〒730-0051 広島市中区大手町3丁目7−3</a></u>（<a href="https://goo.gl/maps/fjTD6D6wzmL6ctSF7" target="_blank">地図</a>）
+
+      <h3>練習会場</h3>
+      JMS アステールプラザ
+      <u><a href="http://h-culture.jp/access/" target="_blank">〒730-0812 広島市中区加古町4−17</a></u>（<a href="https://goo.gl/maps/pjoX46hvUmEfxnycA" target="_blank">地図</a>）
+
+      上野学園ホール
+      <u><a href="http://www.rcchall.jp/hall/access/" target="_blank">〒730-0001 広島市中区白島北町19-1</a></u>（<a href="https://goo.gl/maps/ouakhpUh9QhFstZUA" target="_blank">地図</a>）
+
+      <h3>食事</h3>
+      以下の食事はこちらで用意します。
+      3月17日（水）の夜 〜 3月21（日）の朝
+      <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
       <h2 id="prep">準備</h2>
       <h3>本番衣裳（男性）</h3>
-      <!--●　黒礼服上下
+      ●　黒礼服上下
       ●　白長袖ワイシャツ
       ●　黒蝶ネクタイ
       ●　黒靴下
-      ●　黒靴-->
-      <h3>本番衣裳（女性）</h3>
-      <!--●　上下黒
       ●　黒靴
-      ●　素足を出さない-->
+
+      <h3>本番衣裳（女性）</h3>
+      ●　上下黒
+      ●　黒靴
+      ●　素足を出さない
 
       <h3>合宿準備物</h3>
       ●　楽器
       ●　楽譜
       ●　譜面台（後述）
-      ●　着替え・寝巻き
-      ●　コップ
-      ●　歯ブラシ
-      ※タオルは合宿所の方でご用意する予定です。
+      ※ホテルのアメニティについてはホームページをご覧ください。
+      <a href="http://www.kuretake-inn.com/hiroshima/rooms/">ホテル呉竹荘 広島大手町</a>（ページ下部の客室概要に詳細がございます）
       <!--●　<a href="../entry/fee.html#misc">オプション等諸費</a>＋α
       <small>※パート費については各パートでご確認ください。
         ※合宿所には洗濯機があります。洗剤は主管が用意します。
         ※石鹸・シャンプーは各部屋浴室と大浴場にあります。その他<strong>タオル</strong>、歯ブラシ、かみそり、くしなどのアメニティグッズはありませんので、各自必要なものをご持参ください。
         ※その他合宿中の注意点などは「<a href="https://docs.google.com/document/d/1P8xQ5Iq79B_C1JWIXFovUhQ_rpcRKnwTM7-mCIupti4/edit">合宿のしおり</a>」をご覧ください。</small>-->
-
       <h3>譜面台について</h3>
-      今回もお一人あたり2本の持参をお願いする予定です。
+      今回はお一人あたり<u><font color="red">1本</font></u>の持参をお願いする予定です。
+      感染予防の観点から、練習期間中はご自身の譜面台をご利用いただきます。
       <!--1人あたり2本の持参をお願いしています。大学ごとにまとめて持ってきてください。また、譜面台それぞれに大学名と番号を振って下さい。ビニールテープ・マスキングテープなどに書いて貼ってください。
       例「広島①」「広島②」「広島③」
       用意が難しい方、質問がある方は譜面台係にご連絡ください。-->
-
       譜面台係 反納沙雪
       <script>
         g('fumendai')
       </script>
-
       <!--<h3>合宿所への郵送について</h3>
       譜面台など、合宿所へ荷物を郵送される方への注意事項です。
       <ol>
@@ -241,86 +278,45 @@
         <li>着払いはご遠慮ください。
       </ol-->
       <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
-      <h2 id="camp">合宿</h2>
-      <u>2021年3月15日（月）〜 </u><u>3月20日（土）</u>
-      <!--<a target="_blank" href="https://docs.google.com/spreadsheets/d/19DBi1CMSJxyomDWicgU18n5y5-nyZHbs8k7C_plJsPU/edit#gid=0">スケジュール</a>-->
+      <h2 id="practice">練習</h2>
+      ホテルから練習会場への移動はご自身でお願いいたします。バスなどの用意はございません。
 
-      倉敷シーサイドホテル
-      <a href="http://www.kurashiki-seaside.co.jp/access.html" target="_blank">〒711-0934 岡山県倉敷市児島塩生2767-21</a>（<a href="https://goo.gl/maps/iGqDmX6gcNFGvRX99" target="_blank">地図</a>）
+      <h3>練習会場</h3>
+      JMS アステールプラザ
+      <u><a href="http://h-culture.jp/access/" target="_blank">〒730-0812 広島市中区加古町４−１７</a></u>（<a href="https://goo.gl/maps/pjoX46hvUmEfxnycA" target="_blank">地図</a>）
+
+      上野学園ホール
+      <u><a href="http://www.rcchall.jp/hall/access/" target="_blank">〒730-0001 広島市中区白島北町19-1</a></u>（<a href="https://goo.gl/maps/ouakhpUh9QhFstZUA" target="_blank">地図</a>）
+
+      ※詳細につきましては続報をお待ちください
 
       合宿所係 藤原なつみ・脇中日向子
       <script>
         g('gasshukujo')
       </script>
-
-      <h3 id="reception">レセプション</h3>
-      今回レセプションは行わない予定です。
-
-      打ち上げ係 西野友博
-      <script>
-        g('uchiage')
-      </script>
-
-      <!--合宿は5泊6日3食付です。途中参加／途中抜けされる方はお早めにご連絡ください。
-      合宿中の注意点などは「<a href="https://docs.google.com/document/d/1P8xQ5Iq79B_C1JWIXFovUhQ_rpcRKnwTM7-mCIupti4/edit">合宿のしおり</a>」をご覧ください。
-      合宿所への直接の連絡はご遠慮ください。-->
-
-      <!--合宿所係 藤原なつみ・脇中日向子
-      <script>
-        g('gasshukujo')
-      </script>-->
-      <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
-      <h2 id="zenjitsu">前日</h2>
-      <h3 id="bus">バス</h3>
-      合宿所→ホールのバスをご用意する予定です。
-      <!--<small>※テューバ、トロンボーン、チェロパートの方には、楽器用にそれぞれ2席ずつご用意いたします。他のパートの方で必要な方は2月28日までに前当日係までご連絡ください。
-        ※合宿所→ホール→ホテルの移動とお伝えしていましたが、合宿所→ホールのみとなりました。バスを利用される方は、ホールに移動する前にバスがホテルに寄りますので、大きな荷物はホテルに置いていただくことになります。リハーサル後は各自でホテルまで移動していただきます。ホールからホテルの移動は公共交通機関を使って20分程度です。オプション締切後の変更となり、大変申し訳ございません。バス利用の変更を希望される方は、<strong><u>3月6日（火）</u></strong>までに前当日係にご連絡ください。変更に伴うキャンセル料はいただきません。</small>-->
-
-      <h3 id="rehearsal">前日練</h3>
-      上野学園ホール
-      <u><a href="http://www.rcchall.jp/hall/access/" target="_blank">〒730-0001 広島市中区白島北町19-1</a></u>（<a href="https://goo.gl/maps/ouakhpUh9QhFstZUA" target="_blank">地図</a>） <u>アストラムライン白島駅すぐ</u>
-
-      <!--広島市内でトップクラスの音響と言われており、劇団四季も御用達のホールです。
-      前日練と本番で使用します。-->
-      ホール係 長岡佑磨・坂谷友理
-      <script>
-        g('hall')
-      </script>
-
-      <h3 id="hotel">前当日ホテル</h3>
-      ホテル法華クラブ広島
-      <u><a href="https://www.hokke.co.jp/hiroshima/access/" target="_blank">〒730-0037 広島市中区中町7-7</a></u>（<a href="https://goo.gl/maps/Pfi4RxSL4uVPC1Aj8" target="_blank">地図</a>） <u>アストラムライン本通駅徒歩7分</u>
-
-      前当日係 岡本花乃
-      <script>
-        g('zentoujitsu')
-      </script>
       <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
       <h2 id="concert">公演</h2>
-      <u>2021年3月21日（日）</u><u>15:30<small>（開場 15:00）（予定）</small></u>
+      <h3>日時</h3>
+      <u>2021年3月21日（日）</u><u>15:00（開場 14:30）<small>（予定）</small></u>
 
+      <h3>会場</h3>
       上野学園ホール
       <u><a href="http://www.rcchall.jp/hall/access/" target="_blank">〒730-0001 広島市中区白島北町19-1</a></u>（<a href="https://goo.gl/maps/ouakhpUh9QhFstZUA" target="_blank">地図</a>）
+
       <h3 id="#program">曲目</h3>
-      曲目未定
-      <!--<u>チャイコフスキー／</u><u>スラヴ行進曲</u>
-      <u>プロコフィエフ／</u><u>バレエ音楽</u><u>『ロメオとジュリエット』より</u>
-      <ol>
-        <li>モンタギュー家とキャピュレット家<u><small>（第2組曲第1曲）</small></u>
-        <li>ロメオとジュリエット<u><small>（第1組曲第6曲）</small></u>
-        <li>ティボルトの死<u><small>（第1組曲第7曲）</small></u>
-        <li>ジュリエットの墓の前のロメオ<u><small>（第2組曲第7曲）</small></u>
-      </ol>
-      <u>ラフマニノフ／</u><u>交響曲第2番ホ短調</u>-->
+      <u>ヴェルディ／</u><u>歌劇『運命の力』序曲</u>
+      <u>ボロディン／</u><u>歌劇『イーゴリ公』より</u><u>韃靼人の踊り</u>
+      <u>チャイコフスキー／</u><u>交響曲第6番「悲愴」</u>
       <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
-      <h2 id="party">打ち上げ</h2>
-      <h3>1次会</h3><u>3月21日（日）19:00 - 21:30（予定）</u>
+      <h2 id="party">打ち上げ・レセプション</h2>
+      今回は感染予防のため<u><font color="red">中止</font></u>とさせていただきます。
+      <!--<h3>1次会</h3><u>3月21日（日）19:00 - 21:30（予定）</u>
       <u>ANAクラウンプラザホテル広島</u>
       <u><a href="https://www.anacrowneplaza-hiroshima.jp/access/index.html" target="_blank">〒730-0037 広島市中区中町7-20</a></u>（<a href="https://goo.gl/maps/1b9fsBjzL8H2" target="_blank">地図</a>） <u>前当日ホテルより徒歩2分</u>
 
       <h3>2次会</h3><u>3月21日（日）22:00 - 24:00（予定）</u>
       <u>場所未定</u>
-      <!--<a href="https://goo.gl/maps/hZEk8hh4Kmt" target="_blank"><u>〒730-0032 広島市中区立町6-1</u> <u>立町ウイングビル2・3F</u></a> <u>1次会会場より徒歩10分</u>
+      <a href="https://goo.gl/maps/hZEk8hh4Kmt" target="_blank"><u>〒730-0032 広島市中区立町6-1</u> <u>立町ウイングビル2・3F</u></a> <u>1次会会場より徒歩10分</u>
 
       キャンセルは2月28日まで、不参加→参加の変更はその後も可能です。
       奮ってご参加ください。-->
@@ -331,79 +327,62 @@
       </script>
       <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
       <h2 id="goods">グッズ情報</h2>
-      <img src="src/coming-soon-5145985_1920.png" width="500px" class="coming-soon" alt="coming soon">
-      <!--<h3 id="t-shirt">Tシャツ &yen;2,300</h3>
+      <h3 id="t-shirt">Tシャツ（サックス／ブラック） &yen;2,500</h3>
       <div class="flex">
-        <a data-lightbox="t-shirt" data-title="ロシアの動物（ホッキョクグマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="t-shirt-design.svg"><img style="width:300px" src="t-shirt-white.png" /></a>
+        <a data-lightbox="t-shirt" data-title="広島の戦後復興のシンボルとして有名なアオギリをモチーフにしました。この1年様々な困難がありました。その困難を乗り越え、西オケを盛り上げていくという意気込みも込めたデザインとなっています。" href="img/t-shirtlogo.png"><img style="width:300px" src="img/t-shirt.png" /></a>
         <div class="color-and-size">
           <ul class="color-sample">
-            <li style="background:#f9f9fa"><a data-lightbox="t-shirt" data-title="ホワイト" href="t-shirt-white.png"></a>
-            <li style="background:#ffc8d1"><a data-lightbox="t-shirt" data-title="ライトピンク" href="t-shirt-lightpink.png"></a>
-            <li style="background:#ffe700"><a data-lightbox="t-shirt" data-title="デイジー" href="t-shirt-daisy.png"></a>
-            <li style="background:#aced53"><a data-lightbox="t-shirt" data-title="ライトグリーン" href="t-shirt-lightgreen.png"></a>
-            <li style="background:#b2d6ee"><a data-lightbox="t-shirt" data-title="ライトブルー" href="t-shirt-lightblue.png"></a>
-            <li style="background:#818c90"><a data-lightbox="t-shirt" data-title="グレー" href="t-shirt-gray.png"></a>
+            <li style="background:#87CEFA"><a data-lightbox="t-shirt" data-title="サックスブルー" href="img/t-shirt.png"></a>
           </ul>
           <table class="size">
             <tr class="u">
-              <td>Tシャツ
+              <td>SIZE
               <td><ruby>身丈<rt>みたけ</ruby>
               <td><ruby>身巾<rt>みはば</ruby>
-              <td><ruby>袖丈<rt>そでたけ</ruby>
             <tr>
-              <td>150 (WS)
-              <td>59
-              <td>42
-              <td>18
-            <tr>
-              <td>160 (WM)
+              <td>SS
               <td>62
-              <td>45
-              <td>19
+              <td>44
             <tr>
               <td>S
               <td>65
-              <td>48
-              <td>20
+              <td>47
             <tr>
               <td>M
               <td>68
-              <td>51
-              <td>21
+              <td>50
             <tr>
               <td>L
               <td>71
-              <td>54
-              <td>22
+              <td>53
             <tr>
-              <td>XL
+              <td>LL
               <td>74
-              <td>57
-              <td>23
+              <td>56
             <tr>
-              <td>XXL
+              <td>3L
               <td>77
               <td>60
-              <td>25
           </table>
         </div>
       </div>
       <small>※予告なくデザインを変更する場合があります。</small>
-      <h3 id="sweat">スウェット &yen;3,700</h3>
+      
+      <h3 id="sweat">スウェット（ディープネイビー／ライトブルー） &yen;3,700</h3>
       <div class="flex">
-        <a data-lightbox="sweat" data-title="ロシアの動物（ホッキョクグマ、シベリアビッグホーン、アザラシ、ペンギン、オオワシ）をマトリョーシカに模しました。" href="sweat-pants-design.svg"><img style="width:300px" src="sweat-pants.png" /></a>
-        <div class="color-and-size">
+        <a data-lightbox="sweat" data-title="広島の戦後復興のシンボルとして有名なアオギリをモチーフにしました。この1年様々な困難がありました。その困難を乗り越え、西オケを盛り上げていくという意気込みも込めたデザインとなっています。" href="img/sweatlogo.png"><img style="width:300px" src="img/sweat.png" /></a>
+        <div class="color-and-size sweatmargin">
           <ul class="color-sample">
-            <li style="background:#c0bebf"><a data-lightbox="sweat" data-title="ライトグレー" href="sweat-pants.png"></a>
+            <li style="background:#202f55"><a data-lightbox="sweat" data-title="ディープネイビー" href="img/sweat.png"></a>
           </ul>
           <table class="size">
             <tr class="u">
-              <td>スウェット
+              <td>SIZE
               <td><ruby>総丈<rt>そうたけ</ruby>
               <td>ウエスト
               <td>股下
             <tr>
-              <td>WM
+              <td>WS
               <td>94
               <td>70-78
               <td>70
@@ -423,12 +402,12 @@
               <td>79-87
               <td>76
             <tr>
-              <td>XL
+              <td>LL
               <td>108
               <td>82-90
               <td>78
             <tr>
-              <td>XXL
+              <td>3L
               <td>110
               <td>85-93
               <td>80
@@ -436,7 +415,7 @@
         </div>
       </div>
       <small>※予告なくデザインを変更する場合があります。</small>
-      <h3 id="badge">缶バッジ<small>（合宿所限定販売）</small></h3>各&yen;150、6個セット &yen;700
+      <!--<h3 id="badge">缶バッジ<small>（合宿所限定販売）</small></h3>各&yen;150、6個セット &yen;700
       <div class="badge-container">
         <a data-lightbox="badge" href="badge1.png" style="background-image:url('badge1.png')" data-title="1 ホッキョクグマ（ペールイエロー）"></a>
         <a data-lightbox="badge" href="badge2.png" style="background-image:url('badge2.png')" data-title="2 シベリアビッグホーン（ライトグリーン）"></a>
@@ -453,14 +432,14 @@
       <h3 id="sticker">医オケくじ（ステッカー） &yen;300</h3>
       <div class="flex">
         <a data-lightbox="sticker" data-title="医オケくじ（ステッカー）&yen;300" href="sticker.png"><img style="width:300px" src="sticker.png" /></a>
-      </div>
+      </div>-->
 
       デザイン係 光野萌
       <script>
         g('design')
       </script>
 
-      <h3 id="video">録音・映像</h3>
+      <!--<h3 id="video">録音・映像</h3>
       <table class="dl">
         <tr>
           <td>CD（2枚組）
@@ -475,8 +454,8 @@
       CD・DVD係 守谷涼夏
       <script>
         g('video')
-      </script>
-      <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>-->
+      </script>-->
+      <p class="backlink"><a href="#top">ページの先頭へ戻る</a></p>
       <h2 id="deadline">変更受付期限</h2>
       <img src="src/coming-soon-5145985_1920.png" width="500px" class="coming-soon" alt="coming soon">
       <!--<div class="deadline-container">
@@ -540,7 +519,7 @@
         "@id": "https://nishi-orche.com/32nd/",
         "name": "第32回西オケ"
       }
-    },{
+    }, {
       "@type": "ListItem",
       "position": 2,
       "item": {
