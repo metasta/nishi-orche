@@ -20,6 +20,32 @@
 
 <style>
 a[href].button {
+display: block;
+box-sizing: border-box;
+border: 1px solid transparent;
+border-radius: 3px;
+padding: .5em;
+background-color: #3498db;
+color: #fff;
+font-size: 12pt;
+text-align: center;
+transition: .2s;
+}
+
+a[href].button:focus,
+a[href].button:hover,
+a[href].button:active {
+background-color: #56bafe;
+text-decoration: none;
+}
+
+a[href].button.disabled {
+pointer-events: none;
+background-color: #cdcdcd;
+color: #fff;
+}
+
+a[href].button {
 margin: 0 auto;
 max-width: 480px;
 }
@@ -47,8 +73,8 @@ document.write('<a href="mailto:' + m + '">' + m + '</a>');
 </script>
 <article>
 <h2 id="form">エントリーフォーム</h2>
-<a href="wind_and_percussions.html" class="button" disabled>管打楽器</a>
-<a href="strings.html" class="button" disabled>弦楽器</a>
+<a href="wind_and_percussions.html" class="button disabled">管打楽器</a>
+<a href="strings.html" class="button disabled">弦楽器</a>
 <a href="https://forms.gle/GpBq7mJ6xYo2shMw9" class="button">練習フォーム</a><br>
 指定された時刻になりましたら、各フォームが開かれます。お間違えのないよう、ご注意ください。
 
