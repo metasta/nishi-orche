@@ -10,171 +10,171 @@
 <script src="src/google-analytics.js"></script>
 
 <main lang="ja">
-  <iframe id="header" src="src/header.html"></iframe>
-  <nav class="breadcrumb">
-    <p><a href="./">ホーム</a></p> &gt;
-    <p><a href="#">お問い合わせ</a></p>
-  </nav>
+<iframe id="header" src="src/header.html"></iframe>
+<nav class="breadcrumb">
+<p><a href="./">ホーム</a></p> &gt;
+<p><a href="#">お問い合わせ</a></p>
+</nav>
 
 
-  <section>
-    <style>
-      form {
-        white-space: normal;
-        vertical-align: baseline;
-        margin: 0 auto;
-        max-width: 480px;
-      }
+<section>
+<style>
+form {
+white-space: normal;
+vertical-align: baseline;
+margin: 0 auto;
+max-width: 480px;
+}
 
-      label {
-        display: block;
-        margin: 14px 0 0 0;
-        height: 22px;
-      }
+label {
+display: block;
+margin: 14px 0 0 0;
+height: 22px;
+}
 
-      input,
-      textarea,
-      button {
-        display: block;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font: 200 100%/28px 'Hiragino Sans', sans-serif;
-        -webkit-appearance: none;
-      }
+input,
+textarea,
+button {
+display: block;
+box-sizing: border-box;
+border-radius: 3px;
+font: 200 100%/28px 'Hiragino Sans', sans-serif;
+-webkit-appearance: none;
+}
 
-      input,
-      textarea {
-        margin: 0;
-        border: 1px solid #bbb;
-        padding: 0 .5em;
-        outline: 0;
-      }
+input,
+textarea {
+margin: 0;
+border: 1px solid #bbb;
+padding: 0 .5em;
+outline: 0;
+}
 
-      input:focus,
-      textarea:focus {
-        border: 1px solid #3498db;
-      }
+input:focus,
+textarea:focus {
+border: 1px solid #3498db;
+}
 
-      input {
-        width: 240px;
-        height: 28px;
-      }
+input {
+width: 240px;
+height: 28px;
+}
 
-      textarea {
-        width: 90%;
-        height: 10em;
-        resize: vertical;
-      }
+textarea {
+width: 90%;
+height: 10em;
+resize: vertical;
+}
 
-      button {
-        border: none;
-        margin-top: 40px;
-        padding: 3px 20px;
-        color: #fff;
-        background-color: #3498db;
-        transition: background-color .2s;
-      }
+button {
+border: none;
+margin-top: 40px;
+padding: 3px 20px;
+color: #fff;
+background-color: #3498db;
+transition: background-color .2s;
+}
 
-      button:focus,
-      button:hover,
-      button:active {
-        background-color: #56bafe;
-      }
+button:focus,
+button:hover,
+button:active {
+background-color: #56bafe;
+}
 
-      input[type="hidden"] {
-        display: none;
-      }
+input[type="hidden"] {
+display: none;
+}
 
-      /*button.disabled {
+/*button.disabled {
         pointer-events: none;
         background-color: #cdcdcd;
         color: #fff;
       }*/
 
-      table.staff {
-        width: 100%;
-        white-space: normal;
-        border-collapse: collapse;
-        text-align: left;
-        font-size: 95%;
-      }
+table.staff {
+width: 100%;
+white-space: normal;
+border-collapse: collapse;
+text-align: left;
+font-size: 95%;
+}
 
-      table.staff th,
-      table.staff td {
-        padding: .5em;
-      }
+table.staff th,
+table.staff td {
+padding: .5em;
+}
 
-      table.staff td {
-        border-bottom: 1px dotted #ccc;
-      }
+table.staff td {
+border-bottom: 1px dotted #ccc;
+}
 
-      table.staff tr:nth-of-type(2n) {}
+table.staff tr:nth-of-type(2n) {}
 
-      table.staff th {
-        font-weight: inherit;
-      }
+table.staff th {
+font-weight: inherit;
+}
 
-      table.staff ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+table.staff ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
 
-      @media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) {
 
-        table.staff,
-        table.staff tbody,
-        table.staff tr,
-        table.staff td {
-          display: block;
-        }
+table.staff,
+table.staff tbody,
+table.staff tr,
+table.staff td {
+display: block;
+}
 
-        table.staff td:nth-child(1),
-        table.staff td:nth-child(2) {
-          display: inline-block;
-        }
+table.staff td:nth-child(1),
+table.staff td:nth-child(2) {
+display: inline-block;
+}
 
-        table.staff th {
-          display: none;
-        }
+table.staff th {
+display: none;
+}
 
-        table.staff tr {
-          margin-top: 2em;
-        }
+table.staff tr {
+margin-top: 2em;
+}
 
-        table.staff td {
-          border: none;
-          padding: 0;
-        }
+table.staff td {
+border: none;
+padding: 0;
+}
 
-        table.staff td:first-child {
-          padding-right: 1em;
-        }
+table.staff td:first-child {
+padding-right: 1em;
+}
 
-        table.staff li {
-          display: inline-block;
-        }
+table.staff li {
+display: inline-block;
+}
 
-        table.staff li:not(:first-child):before {
-          content: '・';
-        }
-      }
-    </style>
-    <script>
-      function g(s) {
-        var m = 'nish' + 'iorche32' + s + '@gm' + 'ail.c' + 'om';
-        document.write('<a href="mailto:' + m + '">' + m + '</a>');
-      }
-    </script>
-    <article>
-      <h2 id="mail-form">メールフォーム</h2>
+table.staff li:not(:first-child):before {
+content: '・';
+}
+}
+</style>
+<script>
+function g(s) {
+var m = 'nish' + 'iorche32' + s + '@gm' + 'ail.c' + 'om';
+document.write('<a href="mailto:' + m + '">' + m + '</a>');
+}
+</script>
+<article>
+<h2 id="mail-form">メールフォーム</h2>
 
-      <script src="https://sdk.form.run/js/v2/embed.js"></script>
-      <div class="formrun-embed" data-formrun-form="@nishiorche-web-1593743420" data-formrun-redirect="true">
-      </div>
+<script src="https://sdk.form.run/js/v2/embed.js"></script>
+<div class="formrun-embed" data-formrun-form="@nishiorche-web-1593743420" data-formrun-redirect="true">
+</div>
 
 
-      <!--<form id="contactform" action="https://nishiorche32.github.io/32th/mail-form/mail.php" method="post" accept-charset="UTF-8">
+<!--<form id="contactform" action="https://nishiorche32.github.io/32th/mail-form/mail.php" method="post" accept-charset="UTF-8">
         <label for="name">お名前</label>
         <input type="text" id="name" name="name" required />
         <label for="mail">メールアドレス</label>
@@ -185,194 +185,194 @@
         <button type="submit" class="">送信</button>
       </form>-->
 
-      <h2 id="staff">第32回実行委員</h2>
-      主管校：広島大学
-      住所：〒734-8551 広島市南区霞1丁目2番3号 霞体育館二階
-      電話番号：09079972905
-      <table class="staff">
-        <tr>
-          <th>役職
-          <th>名前
-          <th>連絡先
-        <tr>
-          <td>実行委員長
-          <td>山田息吹
-          <td>
-            <script>
-              g('jiccho')
-            </script>
-        <tr>
-          <td>副実行委員長
-          <td>
-            <ul>
-              <li>長岡真実</li>
-              <li>甲斐裕子</li>
-            </ul>
-          <td>
-        <tr>
-          <td>会計
-          <td>
-            <ul>
-              <li>長岡真実
-              <li>湯澤実歩
-            </ul>
-          <td>
-            <script>
-              g('kaikei')
-            </script>
-        <tr>
-          <td>渉外
-          <td>甲斐裕子
-          <td>
-            <script>
-              g('shogai')
-            </script>
-        <tr>
-          <td>合宿所
-          <td>
-            <ul>
-              <li>藤原なつみ
-              <li>脇中日向子
-            </ul>
-          <td>
-            <script>
-              g('gasshukujo')
-            </script>
-        <tr>
-          <td>ホール
-          <td>
-            <ul>
-              <li>長岡佑磨</li>
-              <li>坂谷友理</li>
-            </ul>
-          <td>
-            <script>
-              g('hall')
-            </script>
-        <tr>
-          <td>打ち上げ
-          <td>西野友博
-          <td>
-            <script>
-              g('uchiage')
-            </script>
-        <tr>
-          <td>CD・DVD
-          <td>守谷涼夏
-          <td>
-            <script>
-              g('video')
-            </script>
-        <tr>
-          <td>楽譜
-          <td>田中綾
-          <td>
-            <script>
-              g('library')
-            </script>
-        <tr>
-          <td>譜面台
-          <td>反納沙雪
-          <td>
-            <script>
-              g('fumendai')
-            </script>
-        <tr>
-          <td>Web
-          <td>野口颯真
-          <td>
-            <script>
-              g('web')
-            </script>
-        <tr>
-          <td>エントリー
-          <td>野口颯真
-          <td>
-            <script>
-              g('entry')
-            </script>
-        <tr>
-          <td>デザイン
-          <td>光野萌
-          <td>
-            <script>
-              g('design')
-            </script>
-        <tr>
-          <td>OB・OG
-          <td>光野萌
-          <td>
-            <script>
-              g('obog')
-            </script>
-        <tr>
-          <td>チケット
-          <td>北﨑ほなみ
-          <td>
-            <script>
-              g('ticket')
-            </script>
-        <tr>
-          <td>広報
-          <td>吉田真理
-          <td>
-            <script>
-              g('kouhou')
-            </script>
-        <tr>
-          <td>後援
-          <td>脇中日向子
-          <td>
-            <script>
-              g('kouen')
-            </script>
-        <tr>
-          <td>前当日
-          <td>岡本花乃
-          <td>
-            <script>
-              g('zentoujitsu')
-            </script>
-        <tr>
-          <td>運搬・特殊楽器
-          <td>川上愛
-          <td>
-            <script>
-              g('unpan')
-            </script>
-        <tr>
-          <td>指揮者
-          <td>
-            <ul>
-              <li>西村英弥璃
-              <li>中田千優
-            </ul>
-          <td>
-      </table>
-    </article>
-  </section>
+<h2 id="staff">第32回実行委員</h2>
+主管校：広島大学
+住所：〒734-8551 広島市南区霞1丁目2番3号 霞体育館二階
+電話番号：09079972905
+<table class="staff">
+<tr>
+<th>役職
+<th>名前
+<th>連絡先
+<tr>
+<td>実行委員長
+<td>山田息吹
+<td>
+<script>
+g('jiccho')
+</script>
+<tr>
+<td>副実行委員長
+<td>
+<ul>
+<li>長岡真実</li>
+<li>甲斐裕子</li>
+</ul>
+<td>
+<tr>
+<td>会計
+<td>
+<ul>
+<li>長岡真実
+<li>湯澤実歩
+</ul>
+<td>
+<script>
+g('kaikei')
+</script>
+<tr>
+<td>渉外
+<td>甲斐裕子
+<td>
+<script>
+g('shogai')
+</script>
+<tr>
+<td>合宿所
+<td>
+<ul>
+<li>藤原なつみ
+<li>脇中日向子
+</ul>
+<td>
+<script>
+g('gasshukujo')
+</script>
+<tr>
+<td>ホール
+<td>
+<ul>
+<li>長岡佑磨</li>
+<li>坂谷友理</li>
+</ul>
+<td>
+<script>
+g('hall')
+</script>
+<tr>
+<td>打ち上げ
+<td>西野友博
+<td>
+<script>
+g('uchiage')
+</script>
+<tr>
+<td>CD・DVD
+<td>守谷涼夏
+<td>
+<script>
+g('video')
+</script>
+<tr>
+<td>楽譜
+<td>田中綾
+<td>
+<script>
+g('library')
+</script>
+<tr>
+<td>譜面台
+<td>反納沙雪
+<td>
+<script>
+g('fumendai')
+</script>
+<tr>
+<td>Web
+<td>野口颯真
+<td>
+<script>
+g('web')
+</script>
+<tr>
+<td>エントリー
+<td>野口颯真
+<td>
+<script>
+g('entry')
+</script>
+<tr>
+<td>デザイン
+<td>光野萌
+<td>
+<script>
+g('design')
+</script>
+<tr>
+<td>OB・OG
+<td>光野萌
+<td>
+<script>
+g('obog')
+</script>
+<tr>
+<td>チケット
+<td>北﨑ほなみ
+<td>
+<script>
+g('ticket')
+</script>
+<tr>
+<td>広報
+<td>吉田真理
+<td>
+<script>
+g('kouhou')
+</script>
+<tr>
+<td>後援
+<td>脇中日向子
+<td>
+<script>
+g('kouen')
+</script>
+<tr>
+<td>前当日
+<td>岡本花乃
+<td>
+<script>
+g('zentoujitsu')
+</script>
+<tr>
+<td>運搬・特殊楽器
+<td>川上愛
+<td>
+<script>
+g('unpan')
+</script>
+<tr>
+<td>指揮者
+<td>
+<ul>
+<li>西村英弥璃
+<li>中田千優
+</ul>
+<td>
+</table>
+</article>
+</section>
 
 
-  <iframe id="footer" src="src/footer.html"></iframe>
+<iframe id="footer" src="src/footer.html"></iframe>
 </main>
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@id": "https://nishi-orche.com/32nd/",
-        "name": "第32回西オケ"
-      }
-    }, {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@id": "https://nishi-orche.com/32nd/contact.html",
-        "name": "お問い合わせ"
-      }
-    }]
-  }
+{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@id": "https://nishi-orche.com/32nd/",
+"name": "第32回西オケ"
+}
+}, {
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@id": "https://nishi-orche.com/32nd/contact.html",
+"name": "お問い合わせ"
+}
+}]
+}
 </script>

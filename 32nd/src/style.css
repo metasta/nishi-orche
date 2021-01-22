@@ -29,7 +29,7 @@ iframe#header {
 
 iframe#footer {
   /*height: 370px;*/
-  height: 310px
+  height: 320px
 }
 
 p {
@@ -93,13 +93,16 @@ figcaption {
 
 article {
   white-space: pre-wrap;
+  text-align: justify;
+  letter-spacing: -.02em;
   margin: 0 100px;
   overflow: hidden;
 }
 
 article h1,
 article h2,
-article h3 {
+article h3,
+article h4 {
   white-space: normal;
   display: inline;
   margin: 0;
@@ -107,7 +110,8 @@ article h3 {
 
 article h1:after,
 article h2:after,
-article h3:after {
+article h3:after,
+article h4:after {
   content: '\A';
 }
 
