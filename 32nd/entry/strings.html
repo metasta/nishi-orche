@@ -21,6 +21,32 @@
 
 <style>
 a[href].button {
+display: block;
+box-sizing: border-box;
+border: 1px solid transparent;
+border-radius: 3px;
+padding: .5em;
+background-color: #3498db;
+color: #fff;
+font-size: 12pt;
+text-align: center;
+transition: .2s;
+}
+
+a[href].button:focus,
+a[href].button:hover,
+a[href].button:active {
+background-color: #56bafe;
+text-decoration: none;
+}
+
+a[href].button.disabled {
+pointer-events: none;
+background-color: #cdcdcd;
+color: #fff;
+}
+
+a[href].button {
 margin: 0 auto;
 max-width: 480px;
 }
@@ -79,10 +105,10 @@ color: #fff;
 </style>
 <article>
 <h2>弦楽器</h2>
-<a href="https://goo.gl/forms/Glrebb2GXw59ljtK2" class="button disabled">ヴァイオリン</a>
-<a href="https://goo.gl/forms/UwvYI9x2HIxrn9Cp2" class="button disabled">ヴィオラ</a>
-<a href="https://goo.gl/forms/oSmQ1DsxGgyLqX0q1" class="button disabled">チェロ</a>
-<a href="https://goo.gl/forms/iJ8Wn67QomkW36PG3" class="button disabled">コントラバス</a>
+<a href="https://forms.gle/erD3DRH2E91UUG1t8" class="button">ヴァイオリン</a>
+<a href="https://forms.gle/tpyU6EF4yqtFkg5s9" class="button">ヴィオラ</a>
+<a href="https://forms.gle/S9ouXzscrJuosz9x8" class="button">チェロ</a>
+<a href="https://forms.gle/QkZB2MTreU3oYKan6" class="button">コントラバス</a>
 <a href=".">戻る</a>
 </article>
 </section>
